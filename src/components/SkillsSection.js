@@ -1,140 +1,106 @@
-import React from 'react';
 import styled from 'styled-components';
-import git from '../img/git-original-wordmark.svg';
-import github from '../img/github-original-wordmark.svg';
-import express from '../img/express-original-wordmark.svg';
-import javascript from '../img/javascript-original.svg';
-import jira from '../img/jira-original-wordmark.svg';
-import mongodb from '../img/mongodb-original-wordmark.svg';
-import materialui from '../img/materialui-original.svg';
-import docker from '../img/docker-original-wordmark.svg';
-import nodejs from '../img/nodejs-original-wordmark.svg';
-import npm from '../img/npm-original-wordmark.svg';
-import react from '../img/react-original-wordmark.svg';
-import vscode from '../img/vscode-original-wordmark.svg';
-import sass from '../img/sass-original.svg';
-import gitlab from '../img/gitlab-original-wordmark.svg';
-import heroku from '../img/heroku-original-wordmark.svg';
-import code from '../icons/code.svg';
-import { About, Description, Image } from '../styles';
+import SvgGitOriginalWordmark from '../ImgComponents/GitOriginalWordmark';
+import SvgGitlabOriginalWordmark from '../ImgComponents/GitlabOriginalWordmark';
+import SvgExpressOriginalWordmark from '../ImgComponents/ExpressOriginalWordmark';
+import SvgJavascriptOriginal from '../ImgComponents/JavascriptOriginal';
+import SvgJiraOriginalWordmark from '../ImgComponents/JiraOriginalWordmark';
+import SvgMongodbOriginalWordmark from '../ImgComponents/MongodbOriginalWordmark';
+import SvgMaterialuiOriginal from '../ImgComponents/MaterialuiOriginal';
+import SvgDockerOriginalWordmark from '../ImgComponents/DockerOriginalWordmark';
+import SvgNodejsOriginalWordmark from '../ImgComponents/NodejsOriginalWordmark';
+import SvgNpmOriginalWordmark from '../ImgComponents/NpmOriginalWordmark';
+import SvgReactOriginalWordmark from '../ImgComponents/ReactOriginalWordmark';
+import SvgVscodeOriginalWordmark from '../ImgComponents/VscodeOriginalWordmark';
+import SvgSassOriginal from '../ImgComponents/SassOriginal';
+import SvgGithubOriginalWordmark from '../ImgComponents/GithubOriginalWordmark';
+import SvgHerokuOriginalWordmark from '../ImgComponents/HerokuOriginalWordmark';
+import { About, Description } from '../styles';
+
 
 const SkillsSection = () => {
     return (
         <Skills>
             <Description>
-                <h2>Languages /<span>Libraries</span>/ Dev-Tools</h2>
-                <h3>Assets I am familiar in development/workflow</h3>
+                <h1>Languages /<span>Libraries</span>/ Dev-Tools</h1>
+                <h2>Assets I am familiar with-in development/workflow;</h2>
                 <Cards>
                     <Card>
-                        <Icons>
-                            <img src={javascript} alt="javascript" />
-                        </Icons>
+                        <SvgJavascriptOriginal />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={react} alt="react" />
-                        </Icons>
+                        <SvgReactOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={nodejs} alt="nodejs" />
-                        </Icons>
+                        <SvgNodejsOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={express} alt="expressjs" />
-                        </Icons>
+                        <SvgExpressOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={github} alt="github" />
-                        </Icons>
+                        <SvgGithubOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={git} alt="git" />
-                        </Icons>
+                        <SvgGitOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={gitlab} alt="gitlab" />
-                        </Icons>
+                        <SvgGitlabOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={heroku} alt="heroku" />
-                        </Icons>
+                        <SvgHerokuOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={mongodb} alt="mongodb" />
-                        </Icons>
+                        <SvgMaterialuiOriginal />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={jira} alt="jira" />
-                        </Icons>
+                        <SvgJiraOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={sass} alt="sass" />
-                        </Icons>
+                        <SvgSassOriginal />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={npm} alt="npm" />
-                        </Icons>
+                        <SvgNpmOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={vscode} alt="vscode" />
-                        </Icons>
+                        <SvgVscodeOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={materialui} alt="materialui" />
-                        </Icons>
+                        <SvgMongodbOriginalWordmark />
                     </Card>
                     <Card>
-                        <Icons>
-                            <img src={docker} alt="docker" />
-                        </Icons>
+                        <SvgDockerOriginalWordmark />
                     </Card>
                 </Cards>
             </Description>
-            <Image>
-                <img src={code} alt="html-tags" />
-            </Image>
         </Skills>
     );
 };
 
 const Skills = styled(About)`
-h2{
-    padding-bottom: 5rem;
+h1{
+    padding-bottom: 1rem;
 }
 p{
     width: 70%;
     padding: 2rem 0rem 4rem 0rem;
 }
-background-color: #383e46;
+background-color: #f5f1f1;
+color:black;
 `;
+
 const Cards = styled.div`
 display: flex;
-flex-direction: column;
+flex-wrap: wrap;
+padding: 0rem 0rem;
 `;
+
 const Card = styled.div`
-flex-basis: 20rem;
-icon{
-    display:flex;
-    align-items: center;
-}
-`;
-const Icons = styled.div`
-padding: 10rem 10rem;
-background-size: 10px 20px;
-display:flex;
-flex-direction: row;
+display: flex;
+align-items: center;
+flex-basis: 4rem;
+font-size: 6.5rem;
+border-radius: 1rem;
+margin: 1rem 2rem;
+padding: 1rem 1rem 0rem 1rem; 
 `;
 
 
