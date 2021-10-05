@@ -22,7 +22,7 @@ const SkillsSection = () => {
         <Skills>
             <Description>
                 <h1>Languages /<span>Libraries</span>/ Dev-Tools</h1>
-                <h2>Assets I am familiar with-in development/workflow;</h2>
+                <h2>Some of the assets that I'm familiar with.</h2>
                 <Cards>
                     <Card>
                         <SvgJavascriptOriginal />
@@ -97,7 +97,7 @@ const Card = styled.div`
 display: flex;
 align-items: center;
 flex-basis: 4rem;
-font-size: 6.5rem;
+font-size: 5.7rem;
 border-radius: 1rem;
 margin: 1rem 2rem;
 padding: 1rem 1rem 0rem 1rem; 

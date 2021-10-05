@@ -39,14 +39,15 @@ h1{
 h2{
           font-weight: lighter;
           font-size: .95rem;
-          line-height: 1.4rem;
+          line-height: 1.5rem;
       }
 h3{
           color:white;
       }
 h4{
           font-weight: bold;
-          line-height:2rem;          
+          line-height:2rem;
+          font-size: 1rem;          
       }
 a{
           font-size: 1.1rem;
