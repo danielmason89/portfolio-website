@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const About = styled.div`
-                min-height: 90vh;
+                height: 90vh;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -12,6 +12,7 @@ export const About = styled.div`
 export const Description = styled.div`
                 flex: 1;
                 padding-right: 5rem;
+                z-index:2;
                 margin: 2rem 0rem 5rem 0rem;
                 h2{
                     font-weight:lighter;
@@ -19,10 +20,11 @@ export const Description = styled.div`
                 `
 export const Image = styled.div`
 flex:1;
+z-index:2;
 overflow:hidden;
 img{
     width:100%;
-    height: 85vh;
+    height: 77vh;
     object-fit: cover;
 }
 `

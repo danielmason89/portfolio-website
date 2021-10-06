@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
   }
       
 h1{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: lighter;
     line-height: 3rem;
 }

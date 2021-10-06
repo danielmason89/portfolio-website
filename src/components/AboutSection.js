@@ -1,27 +1,36 @@
 import profile1 from '../img/i-hope-this-works.PNG';
 import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles';
+// Framer Motion
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../Animation";
+import Wave from "../components/Wave";
+
 
 const AboutSection = () => {
+
     return (
         <About>
             <Description>
-                <Intro>
-                    <Hide>
-                        <h1> Daniel Mason.</h1>
-                        <h2> Full stack developer with a <span>focus</span> on the front end.</h2>
-                    </Hide>
-                    <Hide>
-                        <h2>Based in Ottawa, Canada.</h2>
-                    </Hide>
-                </Intro>
-                <button>Connect</button>
-                <p>Scroll to view more.</p>
+                <motion.div variants={titleAnim} initial='hidden' animate='show'>
+                    <Intro>
+                        <Hide>
+                            <h1> Daniel Mason.</h1>
+                            <motion.h2 variants={titleAnim}> Full stack developer with a focus on the <span>front end</span>.</motion.h2>
+                        </Hide>
+                        <Hide>
+                            <motion.h2 variants={titleAnim}>Based in Ottawa, Canada.</motion.h2>
+                        </Hide>
+                    </Intro>
+                </motion.div>
+                <motion.button variants={fade}>Connect</motion.button>
+                <motion.p variants={fade}>Scroll to view more.</motion.p>
             </Description>
             <Image>
-                <img src={profile1} alt="Daniel Mason smiling" />
+                <motion.img variants={photoAnim} src={profile1} alt="Daniel Mason smiling" />
             </Image>
-        </About>
+            <Wave />
+        </About >
     );
 };
 
