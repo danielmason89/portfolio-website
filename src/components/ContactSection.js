@@ -2,21 +2,33 @@ import { AnimateSharedLayout } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
 import { About } from '../styles';
+// import { Link } from 'react-router-dom';
 import Toggle from './Toggle';
-import twitter from '../icons/twitter 1.svg';
+import twitter from '../icons/twitter1.svg';
+import linkedin from '../icons/linkedin2.svg';
+import github from '../icons/github.svg';
+import googlemail from '../icons/mail4.svg';
+import { scrollReveal } from '../Animation';
+import { useScroll } from './UseScroll';
+import { motion } from 'framer-motion';
+import { titleAnim } from "../Animation";
 
 const ContactSection = () => {
+    const [element, controls] = useScroll();
     return (
-        <Contact>
+        <Contact variants={scrollReveal} ref={element} animate={controls} initial='hidden'>
             <AnimateSharedLayout>
                 <Toggle title="Looking for more info?">
                     <h1>Let's<span>connect.</span></h1>
-                    <div className="info">
-                        <p>{twitter}</p>
-                        <p>Linkedin</p>
-                        <p>Github</p>
-                        <p>Gmail</p>
-                    </div>
+                    <Social variants={titleAnim} className="answer">
+                        <a href="https://www.linkedin.com/in/daniel-mason-dev/"><img src={linkedin} alt="Linkedin link"></img></a>
+                        <a href="https://github.com/danielmason89"><img src={github} alt="Github link"></img></a>
+                        <a href="https://twitter.com/Dusmass"><img src={twitter} alt="Twitter link"></img></a>
+                        <a href="MAILTO: danielmasson0@gmail.com"><img src={googlemail} alt="Daniel Masons' Gmail Address"></img></a>
+
+
+
+                    </Social>
                 </Toggle>
             </AnimateSharedLayout>
         </Contact>
@@ -25,7 +37,7 @@ const ContactSection = () => {
 };
 
 const Contact = styled(About)`
-height: 75vh;
+height: 90vh;
 display: block;
 span {
     display: block;
@@ -46,17 +58,26 @@ h1 {
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;
+    cursor:pointer;
 }
-.info{
+.answer{
     display:flex;
     align-items:center;
     justify-content: space-around;
     padding: 1rem 0rem;
     cursor:pointer;
 }
-    p{
-        padding:2rem 2rem;
-    }
+@media (min-width: 1500px) {
+    margin-top: 5rem;
+padding: 3rem;
+font-size: 1rem;
+}
+`;
+
+const Social = styled(motion.div)`
+display:flex;
+align-items:center;
+padding:2rem 1rem;
 `;
 
 export default ContactSection;

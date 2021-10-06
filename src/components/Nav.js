@@ -21,6 +21,9 @@ justify-content:space-between;
 align-items: center;
 padding: 1rem 10rem;
 background-color: #222020;
+position: sticky;
+z-index: 100000;
+top: 0;
 a{
     color: #866f86;
     text-decoration: none;
@@ -41,7 +44,16 @@ ul{
     font-size: 1.8rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
+    display: inline-block;
+    margin: 2rem;
 }
+@media(max-width:1300px) {
+      flex-direction: column;
+      padding: 2rem 1rem;
+      li{
+          padding: 0;
+      }
+      }
 `;
 
 export default Nav;

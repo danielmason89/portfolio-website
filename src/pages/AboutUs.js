@@ -5,6 +5,7 @@ import ContactSection from '../components/ContactSection';
 // Animations
 import { motion } from 'framer-motion';
 import { pageAnimation } from '../Animation';
+import ScrollOrigin from '../components/ScrollOrigin';
 
 const About = () => {
     return (
@@ -12,6 +13,7 @@ const About = () => {
             <AboutSection />
             <SkillsSection />
             <ContactSection />
+            <ScrollOrigin />
         </motion.div>
     );
 };

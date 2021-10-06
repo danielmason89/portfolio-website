@@ -15,11 +15,14 @@ import SvgSassOriginal from '../ImgComponents/SassOriginal';
 import SvgGithubOriginalWordmark from '../ImgComponents/GithubOriginalWordmark';
 import SvgHerokuOriginalWordmark from '../ImgComponents/HerokuOriginalWordmark';
 import { About, Description } from '../styles';
+import { scrollReveal } from '../Animation';
+import { useScroll } from './UseScroll';
 
 
 const SkillsSection = () => {
+    const [element, controls] = useScroll();
     return (
-        <Skills>
+        <Skills variants={scrollReveal} animate={controls} initial='hidden' ref={element}>
             <Description>
                 <h1>Languages /<span>Libraries</span>/ Dev-Tools</h1>
                 <h2>Some of the assets that I'm familiar with.</h2>
@@ -91,6 +94,9 @@ const Cards = styled.div`
 display: flex;
 flex-wrap: wrap;
 padding: 0rem 0rem;
+@media(max-width:1300px) {
+      justify-content: center;
+      }
 `;
 
 const Card = styled.div`

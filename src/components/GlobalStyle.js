@@ -8,6 +8,12 @@ const GlobalStyle = createGlobalStyle`
       box-sizing: border-box;
   }
 
+  html{
+      @media(max-width:1100px) {
+          font-size: 62.5%; 
+      }
+  }
+
   body{
       background: #2c2b2b;
       font-family: 'Raleway', sans-serif;
@@ -51,6 +57,8 @@ h4{
       }
 a{
           font-size: 1.1rem;
+          text-decoration: none;
+          color: inherit;
       }
 span{
         font-weight: bold;

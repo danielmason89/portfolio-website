@@ -1,14 +1,22 @@
 import React from 'react';
+import { Hide } from '../styles';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // Animations
 import { motion } from 'framer-motion';
 import { sliderContainer, slider, fade, pageAnimation, lineAnim } from '../Animation';
+import { useScroll } from '../components/UseScroll';
+import ScrollOrigin from '../components/ScrollOrigin';
 
 
 const Work = () => {
+    const [element, controls] = useScroll();
+    const [element2, controls2] = useScroll();
+    const [element3, controls3] = useScroll();
+    const [element4, controls4] = useScroll();
+    const [element5, controls5] = useScroll();
     return (
-        <WorkStyles style={{ background: '#fff' }} exit='exit' variants={pageAnimation} initial='hidden' animate='show' >
+        <WorkStyles style={{ background: '#2c2b2b' }} exit='exit' variants={pageAnimation} initial='hidden' animate='show' >
             <motion.div variants={sliderContainer}>
                 <Frame1 variants={slider}></Frame1>
                 <Frame2 variants={slider}></Frame2>
@@ -18,68 +26,71 @@ const Work = () => {
 
             <Projects>
                 <div className="card-box">
-                    <div className="card animate-card">
+                    <Hide>
+                        <Project ref={element} variants={fade} animate={controls} initial='hidden'>
+                            <div className="card_side_front">
+                                <motion.h1 variants={fade}>Mealtime</motion.h1>
+                                <motion.div variants={lineAnim} className="line"></motion.div>
+                                <Link />
+                                <img src="" alt="Mealtime homepage" />
+                            </div>
+                            <div className="card_side_back">
+                                <h2>Demo</h2>
+                                <h3>Github link</h3>
+                            </div>
+                        </Project>
+                    </Hide>
+                    <Project ref={element2} variants={fade} animate={controls2} initial='hidden'>
                         <div className="card_side_front">
-                            <motion.h1 variants={fade}>Mealtime</motion.h1>
+                            <motion.h1 variants={fade}>Blake Alexander</motion.h1>
                             <motion.div variants={lineAnim} className="line"></motion.div>
                             <Link />
-                            <img src="" alt="Mealtime homepage" />
+                            <img src="" alt="Blake Alexander homepage" />
                         </div>
                         <div className="card_side_back">
                             <h2>Demo</h2>
                             <h3>Github link</h3>
                         </div>
-                    </div>
-                    <div className="card animate-card">
+                    </Project>
+                    <Project ref={element3} variants={fade} animate={controls3} initial='hidden'>
                         <div className="card_side_front">
-                            <h1>Mealtime</h1>
-                            <motion.div className="line"></motion.div>
+                            <motion.h1 variants={fade}>Peckish</motion.h1>
+                            <motion.div variants={lineAnim} className="line"></motion.div>
                             <Link />
-                            <img src="" alt="Mealtime homepage" />
+                            <img src="" alt="Peckish homepage" />
                         </div>
                         <div className="card_side_back">
-                            <h2>Demo</h2>
-                            <h3>Github link</h3>
+                            <h2>Demo Coming Soon..</h2>
+                            <h3>Github link Coming Soon..</h3>
                         </div>
-                    </div>
-                    <div className="card animate-card">
+                    </Project>
+                    <Project ref={element4} variants={fade} animate={controls4} initial='hidden'>
                         <div className="card_side_front">
-                            <h1>Mealtime</h1>
-                            <motion.div className="line"></motion.div>
+                            <motion.h1 variants={fade}>PupConnect</motion.h1>
+                            <motion.div variants={lineAnim} className="line"></motion.div>
                             <Link />
-                            <img src="" alt="Mealtime homepage" />
+                            <img src="" alt="PupConnect homepage" />
                         </div>
                         <div className="card_side_back">
-                            <h2>Demo</h2>
-                            <h3>Github link</h3>
+                            <h2>Demo Coming Soon..</h2>
+                            <h3>Github link Coming Soon..</h3>
                         </div>
-                    </div>
-                    <div className="card animate-card">
+                    </Project>
+                    <Project ref={element5} variants={fade} animate={controls5} initial='hidden'>
                         <div className="card_side_front">
-                            <h1>Mealtime</h1>
-                            <motion.div className="line"></motion.div>
+                            <motion.h1 variants={fade}>Lustrare</motion.h1>
+                            <motion.div variants={lineAnim} className="line"></motion.div>
                             <Link />
-                            <img src="" alt="Mealtime homepage" />
+                            <img src="" alt="Lustrare homepage" />
                         </div>
                         <div className="card_side_back">
-                            <h2>Demo</h2>
-                            <h2>Github link</h2>
+                            <h2>Demo Coming Soon..</h2>
+                            <h3>Github link Coming Soon..</h3>
                         </div>
-                    </div>
-                    <div className="card animate-card">
-                        <div className="card_side_front">
-                            <h1>Mealtime</h1>
-                            <motion.div className="line"></motion.div>
-                            <Link />
-                            <img src="" alt="Mealtime homepage" />
-                        </div>
-                        <div className="card_side_back">
-                            <h1>Demo</h1>
-                            <h1>Github link</h1>
-                        </div>
-                    </div>
+                    </Project>
                 </div>
             </Projects>
+            <ScrollOrigin />
         </WorkStyles>
     );
 };
@@ -91,8 +102,11 @@ padding: 5rem 10rem;
 h2{
     padding:1rem 0rem;
     }
+    @media (max-width: 1300px) {
+        padding: 2rem 2rem;
+    }
 `;
-const Projects = styled.div`
+const Projects = styled(motion.div)`
 padding-bottom: 10rem;
 .line{
     height:0.5rem;
@@ -110,8 +124,9 @@ padding-bottom: 10rem;
     }
 `;
 
-const Hide = styled.div`
+const Project = styled(motion.div)`
 overflow: hidden;
+color: #c8adad;
 `;
 
 const Frame1 = styled(motion.div)`

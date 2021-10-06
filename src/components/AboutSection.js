@@ -23,7 +23,7 @@ const AboutSection = () => {
                         </Hide>
                     </Intro>
                 </motion.div>
-                <motion.button variants={fade}>Connect</motion.button>
+                <motion.button variants={fade}><a href="MAILTO: danielmasson0@gmail.com">Connect</a></motion.button>
                 <motion.p variants={fade}>Scroll to view more.</motion.p>
             </Description>
             <Image>
