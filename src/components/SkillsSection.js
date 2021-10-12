@@ -14,6 +14,7 @@ import SvgVscodeOriginalWordmark from '../ImgComponents/VscodeOriginalWordmark';
 import SvgSassOriginal from '../ImgComponents/SassOriginal';
 import SvgGithubOriginalWordmark from '../ImgComponents/GithubOriginalWordmark';
 import SvgHerokuOriginalWordmark from '../ImgComponents/HerokuOriginalWordmark';
+import SvgSlackOriginalWorkmark from '../ImgComponents/SlackOriginalWorkmark'
 import { About, Description } from '../styles';
 import { scrollReveal } from '../Animation';
 import { useScroll } from './UseScroll';
@@ -72,6 +73,9 @@ const SkillsSection = () => {
                     <Card>
                         <SvgDockerOriginalWordmark />
                     </Card>
+                    <Card>
+                        <SvgSlackOriginalWorkmark />
+                    </Card>
                 </Cards>
             </Description>
         </Skills>
@@ -79,8 +83,8 @@ const SkillsSection = () => {
 };
 
 const Skills = styled(About)`
-h1{
-    padding-bottom: 1rem;
+h1,h2{
+    padding: 1rem 0rem .5rem 3rem;
 }
 p{
     width: 70%;
@@ -93,7 +97,7 @@ padding: 0rem 0rem;
       p{
           display: flex;
           align-items: center;
-    padding: 3rem 0rem 5rem 0rem;
+    padding: 3rem 10rem 5rem 0rem;
 }
       }
 `;
@@ -114,7 +118,7 @@ flex-basis: 4rem;
 font-size: 5.7rem;
 border-radius: 1rem;
 margin: 1rem 2rem;
-padding: 1rem 1rem 0rem 1rem; 
+padding: 1rem 1rem 1rem 1rem; 
 `;
 
 

@@ -70,7 +70,7 @@ export const slider = {
 
 export const sliderContainer = {
     hidden: { opacity: 1 },
-    show: { opacity: 1, transition: { staggerChildren: .18, ease: 'easeOut', } },
+    show: { opacity: 1, transition: { staggerChildren: 0.13, ease: 'easeOut', } },
 }
 
 export const scrollReveal = {

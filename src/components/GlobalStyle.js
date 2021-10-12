@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
       font-size: 1.1rem;
       cursor: pointer;
       padding: .5rem 1.5rem;
-      margin: .5rem 0rem;
+      margin: 1.4rem 0rem;
       border: 2px solid #23d997;
       background: transparent;
       color:white;
@@ -35,13 +35,23 @@ const GlobalStyle = createGlobalStyle`
           background-color: #23d997;
           color:white;
       }
+      @media(max-width:768px) {
+        &:hover{
+          background-color: #23d997;
+          color:white;
+      }
+                }
   }
       
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: lighter;
-    line-height: 3rem;
+    line-height: 7rem;
+    @media(max-width:768px) {
+        text-align: center;    
 }
+}
+
 h2{
           font-weight: lighter;
           font-size: .95rem;
@@ -68,7 +78,7 @@ p{
           padding: 2rem 0rem;
           color: #ccc;
           font-size:1.1rem;
-          line-height: 150%;
+          line-height: 1%;
       }
 
 `;
