@@ -88,13 +88,21 @@ p{
 }
 background-color: #f5f1f1;
 color:black;
+padding: 0rem 0rem;
+@media(max-width:768px) {
+      p{
+          display: flex;
+          align-items: center;
+    padding: 3rem 0rem 5rem 0rem;
+}
+      }
 `;
 
 const Cards = styled.div`
 display: flex;
 flex-wrap: wrap;
 padding: 0rem 0rem;
-@media(max-width:1300px) {
+@media(max-width:768px) {
       justify-content: center;
       }
 `;

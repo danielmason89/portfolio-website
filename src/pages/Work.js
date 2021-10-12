@@ -96,18 +96,17 @@ const Work = () => {
 };
 
 const WorkStyles = styled(motion.div)`
-min-height:100vh;
+min-height:50vh;
 overflow: hidden;
 padding: 5rem 10rem;
 h2{
     padding:1rem 0rem;
     }
-    @media (max-width: 1300px) {
+    @media (max-width: 768px) {
         padding: 2rem 2rem;
     }
 `;
 const Projects = styled(motion.div)`
-padding-bottom: 10rem;
 .line{
     height:0.5rem;
     background: #D96ED4;
@@ -127,6 +126,17 @@ padding-bottom: 10rem;
 const Project = styled(motion.div)`
 overflow: hidden;
 color: #c8adad;
+
+@media (max-width: 768px) {
+        padding: 2rem 1rem;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        h3{
+        padding-bottom: 1rem;
+    }
+    }
 `;
 
 const Frame1 = styled(motion.div)`

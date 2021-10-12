@@ -47,9 +47,11 @@ ul{
     display: inline-block;
     margin: 2rem;
 }
-@media(max-width:1300px) {
+@media(max-width:768px) {
+    display:flex;
+    align-items: flex-center;
       flex-direction: column;
-      padding: 2rem 1rem;
+      padding: 2.5rem 1rem;
       li{
           padding: 0;
       }
