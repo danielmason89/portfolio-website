@@ -2,6 +2,7 @@ import React from 'react';
 import { Hide } from '../styles';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import mealTime from '../icons/landingPage.PNG';
 // Animations
 import { motion } from 'framer-motion';
 import { sliderContainer, slider, fade, pageAnimation, lineAnim } from '../Animation';
@@ -32,11 +33,11 @@ const Work = () => {
                                 <motion.h1 variants={fade}>Mealtime</motion.h1>
                                 <motion.div variants={lineAnim} className="line"></motion.div>
                                 <Link />
-                                <img src="" alt="Mealtime homepage" />
+                                <Image src={mealTime} alt="Mealtime homepage" />
                             </div>
                             <div className="card_side_back">
-                                <h2>Demo</h2>
-                                <h3>Github link</h3>
+                                <h2></h2>
+                                <a href="https://github.com/danielmason89/savvyCodersCapstoneProjectMealTime"><h3>Github link</h3></a>
                             </div>
                         </Project>
                     </Hide>
@@ -137,6 +138,12 @@ color: #c8adad;
         padding-bottom: 1rem;
     }
     }
+`;
+
+const Image = styled(motion.img)`
+width: auto;
+height: 95vh;
+object-fit: cover;
 `;
 
 const Frame1 = styled(motion.div)`

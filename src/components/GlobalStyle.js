@@ -66,9 +66,10 @@ h4{
           font-size: 1rem;          
       }
 a{
-          font-size: 1.1rem;
+          font-size: 1.2rem;
           text-decoration: none;
           color: inherit;
+          font-weight: bold;
       }
 span{
         font-weight: bold;

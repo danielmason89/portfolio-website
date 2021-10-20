@@ -1,4 +1,4 @@
-import profile1 from '../img/i-hope-this-works.PNG';
+import profile1 from '../img/portfolioPicture.jpeg';
 import styled from 'styled-components';
 import { About, Description, Image, Hide } from '../styles';
 // Framer Motion

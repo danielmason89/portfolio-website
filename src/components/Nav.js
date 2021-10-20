@@ -20,12 +20,12 @@ margin: auto;
 justify-content:space-between;
 align-items: center;
 padding: 1rem 10rem;
-background-color: #222020;
+background-color: #423d3d;
 position: sticky;
 z-index: 100000;
 top: 0;
 a{
-    color: #866f86;
+    color: #8f7e8f;
     text-decoration: none;
     padding: 0rem 1rem;
     margin: 0rem 3rem;

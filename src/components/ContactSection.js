@@ -21,10 +21,10 @@ const ContactSection = () => {
                 <Toggle title="Looking for more info?">
                     <h1>Let's<span>connect.</span></h1>
                     <Social variants={titleAnim} className="answer">
-                        <a href="https://www.linkedin.com/in/daniel-mason-dev/"><img src={linkedin} alt="Linkedin link"></img></a>
-                        <a href="https://github.com/danielmason89"><img src={github} alt="Github link"></img></a>
-                        <a href="https://twitter.com/Dusmass"><img src={twitter} alt="Twitter link"></img></a>
-                        <a href="MAILTO: danielmasson0@gmail.com"><img src={googlemail} alt="Daniel Masons' Gmail Address"></img></a>
+                        <a href="https://www.linkedin.com/in/daniel-mason-dev/"><img src={linkedin} alt="Linkedin link" title="Daniel's Linkedin"></img></a>
+                        <a href="https://github.com/danielmason89"><img src={github} alt="Github link" title="Daniel's Github"></img></a>
+                        <a href="https://twitter.com/Dusmass"><img src={twitter} alt="Twitter link" title="Daniel's Twitter"></img></a>
+                        <a href="MAILTO: danielmasson0@gmail.com"><img src={googlemail} alt="Daniel Masons' Gmail Address" title="Daniel Masons' Gmail"></img></a>
 
 
 
