@@ -25,9 +25,6 @@ const ContactSection = () => {
                         <a href="https://github.com/danielmason89"><img src={github} alt="Github link" title="Daniel's Github"></img></a>
                         <a href="https://twitter.com/Dusmass"><img src={twitter} alt="Twitter link" title="Daniel's Twitter"></img></a>
                         <a href="MAILTO: danielmasson0@gmail.com"><img src={googlemail} alt="Daniel Masons' Gmail Address" title="Daniel Masons' Gmail"></img></a>
-
-
-
                     </Social>
                 </Toggle>
             </AnimateSharedLayout>

@@ -36,7 +36,7 @@ const Work = () => {
                                 <Image src={mealTime} alt="Mealtime homepage" />
                             </div>
                             <div className="card_side_back">
-                                <h2></h2>
+                                <></>
                                 <a href="https://github.com/danielmason89/savvyCodersCapstoneProjectMealTime"><h3>Github link</h3></a>
                             </div>
                         </Project>
