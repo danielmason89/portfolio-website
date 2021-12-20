@@ -54,6 +54,10 @@ const Intro = styled(Description)`
     }
   }
 
+  span {
+    font-size: 1.8rem;
+  }
+
   p {
     font-size: 1.5rem;
     padding: 0.8rem 0rem;

@@ -23,6 +23,9 @@ const MainFooter = styled.div`
   span {
     font-size: 1.5rem;
     color: #8f7e8f;
+    :hover {
+      color: #23d997;
+    }
   }
 
   p {

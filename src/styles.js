@@ -20,6 +20,12 @@ export const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
+  span {
+    font-size: 2rem;
+    :hover {
+      color: #8f7e8f;
+    }
+  }
 
   @media (max-width: 1300px) {
     padding: 0;
