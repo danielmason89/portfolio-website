@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 const GlobalStyle = createGlobalStyle`
   *{
       margin: 0;
@@ -33,12 +32,12 @@ const GlobalStyle = createGlobalStyle`
       font-family: 'Raleway', sans-serif;
       &:hover{
           background-color: #23d997;
-          color:white;
+          color:black;
       }
       @media(max-width:768px) {
         &:hover{
           background-color: #23d997;
-          color:white;
+          color:black;
       }
                 }
   }
@@ -46,7 +45,7 @@ const GlobalStyle = createGlobalStyle`
 h1{
     font-size: 2rem;
     font-weight: lighter;
-    line-height: 7rem;
+    line-height: 4rem;
     @media(max-width:768px) {
         text-align: center;    
 }
@@ -74,11 +73,12 @@ a{
 span{
         font-weight: bold;
         color:#23d997;
+        font-size:1.5rem;
       }
 p{
           padding: 2rem 0rem;
           color: #ccc;
-          font-size:1.1rem;
+          font-size:1.5rem;
           line-height: 1%;
       }
 

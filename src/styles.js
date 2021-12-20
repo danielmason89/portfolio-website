@@ -20,7 +20,7 @@ export const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
-  
+
   @media (max-width: 1300px) {
     padding: 0;
     button {
@@ -33,7 +33,7 @@ export const Image = styled.div`
   flex: 1;
   overflow: hidden;
   img {
-    width: 100%;
+    width: 40vw;
     height: 80vh;
     object-fit: cover;
   }

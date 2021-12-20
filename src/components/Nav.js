@@ -1,17 +1,44 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import twitter from "../icons/twitter1.svg";
+import linkedin from "../icons/linkedin2.svg";
+import github from "../icons/github.svg";
+import { titleAnim } from "../Animation";
 
 const Nav = () => {
   return (
     <StyledNav>
       <Link to="/" className="logo">
-        dan//Dev
+        Dan M.
       </Link>
+      <Social variants={titleAnim} className="answer">
+        <a href="https://www.linkedin.com/in/daniel-mason-dev/">
+          <img
+            src={linkedin}
+            alt="Linkedin link"
+            title="linkedin.com/in/daniel-mason-dev/"
+          ></img>
+        </a>
+        <a href="https://github.com/danielmason89">
+          <img
+            src={github}
+            alt="Github link"
+            title="github.com/danielmason89"
+          ></img>
+        </a>
+        <a href="https://twitter.com/Dusmass">
+          <img
+            src={twitter}
+            alt="Twitter link"
+            title="twitter.com/Dusmass"
+          ></img>
+        </a>
+      </Social>
       <ul>
-        <Link to="/">Home</Link>
         <Link to="/about">About</Link>
-        <Link to="/work">Projects:Work</Link>
+        <Link to="/work">Projects</Link>
+        <Link to="/blog">Blog</Link>
       </ul>
     </StyledNav>
   );
@@ -24,7 +51,6 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
   padding: 1rem 5rem;
-  background-color: #423d3d;
   position: sticky;
   z-index: 100000;
   top: 0;
@@ -43,9 +69,8 @@ const StyledNav = styled.nav`
     list-style: none;
   }
   .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: "Lobster", cursive;
-    font-weight: bold;
   }
   @media (max-width: 768px) {
     text-align: center;
@@ -57,6 +82,17 @@ const StyledNav = styled.nav`
       flex-direction: column;
       align-items: space-between;
       margin: 1rem 0rem;
+    }
+  }
+`;
+
+const Social = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 2rem 1rem;
+  img {
+    :hover {
+      transform: scale(1.4);
     }
   }
 `;

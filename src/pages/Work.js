@@ -23,13 +23,6 @@ const Work = () => {
       initial="hidden"
       animate="show"
     >
-      {/* <motion.div variants={sliderContainer}>
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-      </motion.div> */}
-
       <Projects>
         <div className="card-box">
           <Hide>
@@ -42,15 +35,16 @@ const Work = () => {
               <div className="card_side_front">
                 <motion.h1 variants={fade}>Mealtime</motion.h1>
                 <motion.div variants={lineAnim} className="line"></motion.div>
-                <Link />
-                <Link to="https://mealtimes.netlify.app">
-                  <Image src={mealTime} alt="Mealtime homepage" />
-                </Link>
+                <div>
+                  <a href="https://mealtimes.netlify.app">
+                    <Image src={mealTime} alt="Mealtime homepage" />
+                  </a>
+                </div>
               </div>
               <div className="card_side_back">
                 <></>
                 <a href="https://github.com/danielmason89/savvyCodersCapstoneProjectMealTime">
-                  <h3>Github link</h3>
+                  <h3>Source code</h3>
                 </a>
               </div>
             </Project>
@@ -69,7 +63,7 @@ const Work = () => {
             </div>
             <div className="card_side_back">
               <h2>Demo</h2>
-              <h3>Github link</h3>
+              <h3>Source code</h3>
             </div>
           </Project>
           <Project
@@ -86,7 +80,7 @@ const Work = () => {
             </div>
             <div className="card_side_back">
               <h2>Demo Coming Soon..</h2>
-              <h3>Github link Coming Soon..</h3>
+              <h3>Source code</h3>
             </div>
           </Project>
           <Project
@@ -103,7 +97,7 @@ const Work = () => {
             </div>
             <div className="card_side_back">
               <h2>Demo Coming Soon..</h2>
-              <h3>Github link Coming Soon..</h3>
+              <h3>Source code</h3>
             </div>
           </Project>
           <Project
@@ -120,7 +114,7 @@ const Work = () => {
             </div>
             <div className="card_side_back">
               <h2>Demo Coming Soon..</h2>
-              <h3>Github link Coming Soon..</h3>
+              <h3>Source code</h3>
             </div>
           </Project>
         </div>

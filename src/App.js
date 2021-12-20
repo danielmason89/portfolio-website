@@ -1,13 +1,12 @@
-import React from 'react';
-import Nav from './components/Nav';
-import AboutUs from './pages/AboutUs';
-import Work from './pages/Work';
-import GlobalStyle from './components/GlobalStyle';
-import { Switch, Route, useLocation } from 'react-router-dom';
+import React from "react";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import AboutUs from "./pages/AboutUs";
+import Work from "./pages/Work";
+import GlobalStyle from "./components/GlobalStyle";
+import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
-
-
 
 function App() {
   const location = useLocation();
@@ -25,6 +24,7 @@ function App() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }

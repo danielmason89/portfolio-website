@@ -13,20 +13,18 @@ const AboutSection = () => {
         <motion.div variants={titleAnim} initial="hidden" animate="show">
           <Intro>
             <Hide>
-              <h1> Daniel Mason.</h1>
-              <motion.p variants={titleAnim}>
-                {" "}
-                A Canadian full stack developer with {"=>"}
-              </motion.p>
-              <p> a focus on the </p>
-            </Hide>
-            <Hide>
-              <motion.span variants={titleAnim}> front end.</motion.span>
+              <h1>
+                Hello, my name is{" "}
+                <span className="text-color-main-hover">Dan Mason.</span>
+              </h1>
+              <motion.h1 variants={titleAnim}>A full stack developer</motion.h1>
+              <p> who focuses on responsive </p>
+              <motion.span variants={fade}>front end applications.</motion.span>
             </Hide>
           </Intro>
         </motion.div>
         <motion.button variants={fade}>
-          <a href="MAILTO: danielmasson0@gmail.com">Connect</a>
+          <a href="MAILTO: danielmasson0@gmail.com">Let's Connect</a>
         </motion.button>
         <motion.p variants={fade}>Scroll to view more.</motion.p>
       </Description>
@@ -46,15 +44,18 @@ export default AboutSection;
 
 const Intro = styled(Description)`
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
-    &:hover {
-      color: #23d997;
+    .text-color-main-hover {
+      font-size: 3rem;
+      :hover {
+        color: #8f7e8f;
+      }
     }
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     padding: 0.8rem 0rem;
     font-weight: bold;
   }
