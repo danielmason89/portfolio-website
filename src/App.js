@@ -1,8 +1,10 @@
 import React from "react";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import AboutUs from "./pages/AboutUs";
+import Nav from "./components/Nav/Nav";
+import Footer from "./components/Footer/Footer";
+import Home from "./pages/Home";
 import Work from "./pages/Work";
+import About from "./pages/About";
+// import Blog from "./pages/Blog";
 import GlobalStyle from "./components/GlobalStyle";
 import { Switch, Route, useLocation } from "react-router-dom";
 // Animation
@@ -17,10 +19,13 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path="/" exact strict>
-            <AboutUs />
+            <Home />
           </Route>
-          <Route path="/work">
+          <Route path="/Work">
             <Work />
+          </Route>
+          <Route path="/About" exact strict>
+            <About />
           </Route>
         </Switch>
       </AnimatePresence>

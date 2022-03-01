@@ -1,12 +1,13 @@
 import React from "react";
-import AboutSection from "../components/AboutSection";
-import SkillsSection from "../components/SkillsSection";
+import AboutSection from "../components/About/AboutSection";
+import SkillsSection from "../components/Skills/SkillsSection";
+import Contact from "../components/Contact/Contact";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";
 import ScrollOrigin from "../components/ScrollOrigin";
 
-const About = () => {
+const Home = () => {
   return (
     <motion.div
       exit="exit"
@@ -16,9 +17,10 @@ const About = () => {
     >
       <AboutSection />
       <SkillsSection />
+      <Contact />
       <ScrollOrigin />
     </motion.div>
   );
 };
 
-export default About;
+export default Home;

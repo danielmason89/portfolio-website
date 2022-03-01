@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
 
 const GlobalStyle = createGlobalStyle`
+${normalize}
   *{
       margin: 0;
       padding: 0;
@@ -8,15 +10,16 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html{
-      @media(max-width:1100px) {
+      @media(max-width:1040px) {
           font-size: 62.5%; 
       }
   }
 
   body{
       background: #2c2b2b;
-      font-family: 'Raleway', sans-serif;
+      font-family: 'Lobster', sans-serif;
       overflow-x:hidden;
+      font-weight: normal;
   }
 
   button{
@@ -43,9 +46,9 @@ const GlobalStyle = createGlobalStyle`
   }
       
 h1{
-    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3.5rem;
     font-weight: lighter;
-    line-height: 4rem;
     @media(max-width:768px) {
         text-align: center;    
 }
@@ -53,19 +56,17 @@ h1{
 
 h2{
           font-weight: lighter;
-          font-size: .95rem;
-          line-height: 1.5rem;
+          font-size: 2.5rem;
       }
 h3{
           color:white;
       }
 h4{
           font-weight: bold;
-          line-height:2rem;
-          font-size: 1rem;          
+          font-size: 0.8rem;          
       }
 a{
-          font-size: 1.2rem;
+          font-size: 1.5rem;
           text-decoration: none;
           color: inherit;
           font-weight: bold;
@@ -76,10 +77,10 @@ span{
         font-size:1.5rem;
       }
 p{
-          padding: 2rem 0rem;
-          color: #ccc;
+          padding: .25rem 0rem;
+          color: white;
           font-size:1.5rem;
-          line-height: 1%;
+          
       }
 
 `;
