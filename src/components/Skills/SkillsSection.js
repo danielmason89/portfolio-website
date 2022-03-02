@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SectionDivider, SectionText, Section, List } from "../../styles";
+import { SectionDivider, SectionText, Section } from "../../styles";
 import SvgGitOriginalWordmark from "../../ImgComponents/GitOriginalWordmark";
 import SvgExpressOriginalWordmark from "../../ImgComponents/ExpressOriginalWordmark";
 import SvgJavascriptOriginal from "../../ImgComponents/JavascriptOriginal";
@@ -39,7 +39,6 @@ const SkillsSection = () => {
               world. Ranging from Front-end to Design.
             </p>
           </SectionText>
-          {/* <List></List> */}
           <Cards>
             <Card>
               <SvgJavascriptOriginal />
