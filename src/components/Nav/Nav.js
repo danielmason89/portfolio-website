@@ -14,7 +14,7 @@ const Nav = () => {
         </Link>
         <Link to="/work">Projects</Link>
         <Link to="/about">About</Link>
-        {/* <Link to="../pages/Home.js">Contact</Link> */}
+        <Link to="../pages/Home.js">Contact</Link>
         {/* <Link to="/blog">Blog</Link> */}
       </ul>
       <Social variants={titleAnim} className="answer">

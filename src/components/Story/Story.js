@@ -17,22 +17,30 @@ const Story = () => {
       </Image>
       <StyledStory>
         <p>
-          A self-taught Developer who transitioned from a 10 year career in the
-          culinary arts. I chose the tech industry since I've had some
-          experience with it through my parents who were fiber-optics
-          technicians.
-          <br /> Those experiences fostered my love for the industry since I'm a
-          real problem, and I enjoy the flexibility to be able to think on your
-          feet when needed.
+          As a self-taught developer, I've transitioned from a 10-year career in
+          the culinary arts to the tech industry. I have chosen to make this
+          transition because of experiences during the early 2000s I've had
+          through my parents.
         </p>
         <p>
-          I'm currently looking to work as a front end developer in a medium to
-          large scale company. As well, I'm open to working on freelance
-          projects that come my way depending on the subject matter.
+          During their time as fiber-optics technicians, I learned a lot about
+          computers and their interworkings from a hardware and software point
+          of view.
+          <br /> Those experiences fostered my love for the industry since I'm a
+          creative problem solver who enjoys the ability to be inventive and
+          critical when needed.
+        </p>
+        <p>
+          I'm currently looking for full-time work as a front-end developer in a
+          medium to a large-scale company where I will have the opportunity to
+          collaborate with like-minded individuals, add value with the skills I
+          currently have, and continue to grow as a developer. Moreover, I'm
+          open to working on freelance projects that come my way depending on
+          their respective scale and subject matter.
         </p>
         <span>
-          In my free time you'll find me enjoy a good cups of coffee, reading
-          and going on bike rides during the summer.
+          In my free time, you'll find me enjoying a good cup of coffee,
+          reading, and going on bike rides during the summer.
         </span>
       </StyledStory>
     </div>
