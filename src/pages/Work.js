@@ -96,8 +96,20 @@ const Work = () => {
                       </TagList>
                     </div>
                     <UtilityList>
-                      <ExternalLinks href={visit}>Site</ExternalLinks>
-                      <ExternalLinks href={source}>Repo</ExternalLinks>
+                      <ExternalLinks
+                        href={visit}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Site
+                      </ExternalLinks>
+                      <ExternalLinks
+                        href={source}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Repo
+                      </ExternalLinks>
                     </UtilityList>
                   </BlogCard>
                 )
