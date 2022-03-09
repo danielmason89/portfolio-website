@@ -22,6 +22,7 @@ export const Contact = () => {
             href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
             target="_blank"
             rel="noopener"
+            rel="noreferrer"
           >
             <button>
               <img
@@ -35,13 +36,13 @@ export const Contact = () => {
             href="https://github.com/danielmason89"
             target="_blank"
             rel="noopener"
+            rel="noreferrer"
           >
             <button>
               <img
                 src={github}
                 alt="Github link"
                 title="https://github.com/danielmason89/"
-                target="_blank"
               />
             </button>
           </a>
@@ -49,13 +50,13 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/daniel-mason-dev/"
             target="_blank"
             rel="noopener"
+            rel="noreferrer"
           >
             <button>
               <img
                 src={linkedin}
                 alt="Linkedin link"
                 title="linkedin.com/in/daniel-mason-dev/"
-                target="_blank"
               />
             </button>
           </a>
