@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Footer = () => {
@@ -9,7 +9,7 @@ export const Footer = () => {
         <div>
           <p>
             ©2021 |{" "}
-            <a href="#">
+            <a href="#home">
               <span>Daniel Mason</span>
             </a>
           </p>
@@ -28,6 +28,7 @@ const MainFooter = styled.footer`
   align-items: center;
   justify-content: center;
   span {
+    border: none;
     font-size: 1.5rem;
     color: #23d997;
     :hover {

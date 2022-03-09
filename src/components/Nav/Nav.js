@@ -7,7 +7,7 @@ import { titleAnim } from "../../Animation";
 
 const Nav = () => {
   return (
-    <StyledNav>
+    <StyledNav id="home">
       <ul>
         <Link to="/" className="logo">
           &#8249;&#47;&#8250;
