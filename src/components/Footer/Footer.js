@@ -8,7 +8,10 @@ export const Footer = () => {
       <MainFooter>
         <div>
           <p>
-            ©2021 | <span>Daniel Mason</span>
+            ©2021 |{" "}
+            <a href="#">
+              <span>Daniel Mason</span>
+            </a>
           </p>
         </div>
       </MainFooter>

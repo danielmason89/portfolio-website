@@ -18,7 +18,10 @@ export const Contact = () => {
           😊I look forward to speaking with you soon!📬
         </p>
         <div>
-          <a href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing">
+          <a
+            href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
+            target="_blank"
+          >
             <button>
               <img
                 src={profile}
@@ -27,7 +30,7 @@ export const Contact = () => {
               />
             </button>
           </a>
-          <a href="https://github.com/danielmason89">
+          <a href="https://github.com/danielmason89" target="_blank">
             <button>
               <img
                 src={github}
@@ -36,7 +39,10 @@ export const Contact = () => {
               />
             </button>
           </a>
-          <a href="https://www.linkedin.com/in/daniel-mason-dev/">
+          <a
+            href="https://www.linkedin.com/in/daniel-mason-dev/"
+            target="_blank"
+          >
             <button>
               <img
                 src={linkedin}
