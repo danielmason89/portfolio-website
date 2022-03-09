@@ -7,12 +7,12 @@ export const Footer = () => {
     <div>
       <MainFooter>
         <div>
-          <p>
+          <h3>
             ©2021 |{" "}
             <a href="#home">
               <span>Daniel Mason</span>
             </a>
-          </p>
+          </h3>
         </div>
       </MainFooter>
     </div>
@@ -23,20 +23,20 @@ const MainFooter = styled.footer`
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   color: white;
   align-items: center;
   justify-content: center;
   span {
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     color: #23d997;
     :hover {
       color: #8f7e8f;
     }
   }
 
-  p {
+  h3 {
     margin: 2rem 0rem;
     color: #ccc;
   }
