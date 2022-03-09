@@ -21,19 +21,23 @@ const Nav = () => {
         <a href="https://www.linkedin.com/in/daniel-mason-dev/">
           <img
             src={linkedin}
-            alt="Linkedin link"
+            alt="Linkedin link to bring the user to"
             title="linkedin.com/in/daniel-mason-dev/"
           />
         </a>
         <a href="https://github.com/danielmason89">
           <img
             src={github}
-            alt="Github link"
+            alt="Github link to bring the user to"
             title="github.com/danielmason89"
           />
         </a>
         <a href="https://twitter.com/Dusmass">
-          <img src={twitter} alt="Twitter link" title="twitter.com/Dusmass" />
+          <img
+            src={twitter}
+            alt="Twitter link to bring the user to"
+            title="twitter.com/Dusmass"
+          />
         </a>
       </Social>
     </StyledNav>

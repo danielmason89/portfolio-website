@@ -25,7 +25,7 @@ export const Description = styled.div`
   }
 `;
 
-export const About = styled(motion.div)`
+export const About = styled(motion.header)`
   min-height: 90vh;
   display: flex;
   align-items: center;
