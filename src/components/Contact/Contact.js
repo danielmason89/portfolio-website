@@ -36,7 +36,6 @@ export const Contact = () => {
             href="https://github.com/danielmason89"
             target="_blank"
             rel="noopener"
-            rel="noreferrer"
           >
             <button>
               <img
@@ -50,7 +49,6 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/daniel-mason-dev/"
             target="_blank"
             rel="noopener"
-            rel="noreferrer"
           >
             <button>
               <img
