@@ -6,7 +6,7 @@ import SvgJavascriptOriginal from "../../ImgComponents/JavascriptOriginal";
 import SvgJiraOriginalWordmark from "../../ImgComponents/JiraOriginalWordmark";
 import SvgMongodbOriginalWordmark from "../../ImgComponents/MongodbOriginalWordmark";
 import SvgMaterialuiOriginal from "../../ImgComponents/MaterialuiOriginal";
-import SvgDockerOriginalWordmark from "../../ImgComponents/DockerOriginalWordmark";
+// import SvgDockerOriginalWordmark from "../../ImgComponents/DockerOriginalWordmark";
 import SvgNodejsOriginalWordmark from "../../ImgComponents/NodejsOriginalWordmark";
 import SvgNpmOriginalWordmark from "../../ImgComponents/NpmOriginalWordmark";
 import SvgReactOriginalWordmark from "../../ImgComponents/ReactOriginalWordmark";
@@ -14,7 +14,9 @@ import SvgVscodeOriginalWordmark from "../../ImgComponents/VscodeOriginalWordmar
 import SvgSassOriginal from "../../ImgComponents/SassOriginal";
 import SvgGithubOriginalWordmark from "../../ImgComponents/GithubOriginalWordmark";
 import SvgHerokuOriginalWordmark from "../../ImgComponents/HerokuOriginalWordmark";
-import SvgSlackOriginalWorkmark from "../../ImgComponents/SlackOriginalWorkmark";
+// import SvgSlackOriginalWorkmark from "../../ImgComponents/SlackOriginalWorkmark";
+import SvgCSS3 from "../../ImgComponents/CSS3";
+import SvgHTML5 from "../../ImgComponents/HTML5";
 import { About, Description } from "../../styles";
 import { scrollReveal } from "../../Animation";
 import { useScroll } from "../UseScroll";
@@ -27,6 +29,7 @@ const SkillsSection = () => {
       animate={controls}
       initial="hidden"
       ref={element}
+      id="skills"
     >
       <Description id="tech">
         <Section>
@@ -74,16 +77,19 @@ const SkillsSection = () => {
               <SvgNpmOriginalWordmark />
             </Card>
             <Card>
+              <SvgHTML5 />
+            </Card>
+            <Card>
               <SvgVscodeOriginalWordmark />
             </Card>
             <Card>
               <SvgMongodbOriginalWordmark />
             </Card>
-            <Card>
+            {/* <Card>
               <SvgDockerOriginalWordmark />
-            </Card>
+            </Card> */}
             <Card>
-              <SvgSlackOriginalWorkmark />
+              <SvgCSS3 />
             </Card>
           </Cards>
         </Section>
@@ -93,6 +99,7 @@ const SkillsSection = () => {
 };
 
 const Skills = styled(About)`
+  min-height: 60vh;
   h1,
   h2 {
     /* padding: 1rem 0rem 0.5rem 3rem; */

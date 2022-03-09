@@ -9,20 +9,21 @@ export const Contact = () => {
   return (
     <div>
       <MainContact>
-        <h1>Contact | Social</h1>
+        <h1 id="contact">Contact -📬- Social</h1>
         <p>
-          I look forward to chatting with you to build something creatively
-          responsive! <br />
-          Feel free to look at my current resume, Github, and Linkedin below 😊
-          <br />I look forward to speaking with you soon!
+          I look forward to chatting with you, to build something creative!{" "}
+          <br />
+          Feel free to look at my current resume, Github, and Linkedin below.
+          <br />
+          😊I look forward to speaking with you soon!📬
         </p>
         <div>
-          <a href="https://docs.google.com/document/d/1OgP7Kx1OLKao9hmA_dL4W59uFRcW4pr6NXz0m4lx_KU/edit?usp=sharing">
+          <a href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing">
             <button>
               <img
                 src={profile}
                 alt="Resume link"
-                title="https://docs.google.com/document/d/1OgP7Kx1OLKao9hmA_dL4W59uFRcW4pr6NXz0m4lx_KU/edit?usp=sharing"
+                title="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
               />
             </button>
           </a>
@@ -51,14 +52,18 @@ export const Contact = () => {
 };
 
 const MainContact = styled.footer`
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 4rem;
   margin: 0 3rem;
   color: white;
+  p {
+    font-size: 2rem;
+  }
   div {
     display: flex;
     gap: 3rem;

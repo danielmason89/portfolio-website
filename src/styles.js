@@ -33,7 +33,7 @@ export const About = styled(motion.div)`
   padding: 5rem 10rem;
   color: white;
   h1 {
-    line-height: 0rem;
+    line-height: 3rem;
   }
 
   .image-text {
@@ -43,11 +43,30 @@ export const About = styled(motion.div)`
     text-align: center;
   }
 
-  @media (max-width: 768px) {
-    min-height: 75vh;
+  @media (max-width: 668px) {
+    min-height: 85vh;
     display: block;
     padding: 2rem 2rem;
     text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+    h2 {
+      line-height: 2.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+    }
+    span {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (min-width: 800px) {
+    min-height: 55vh;
+  }
+  @media (min-width: 800px) {
+    min-height: 90vh;
   }
 `;
 
@@ -132,6 +151,7 @@ export const ExternalLinks = styled.a`
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
+    border: 1px solid #ffffff;
     background: #801414;
   }
 `;
@@ -183,7 +203,6 @@ export const SectionTitle = styled.h2`
     #ffffff 18.77%,
     rgba(255, 255, 255, 0.66) 60.15%
   );
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 16px;
   padding: ${(props) => (props.main ? "58px 0 16px" : "0")};

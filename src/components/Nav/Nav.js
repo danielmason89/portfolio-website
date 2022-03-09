@@ -10,12 +10,12 @@ const Nav = () => {
     <StyledNav>
       <ul>
         <Link to="/" className="logo">
-          Daniel Mason &#8249;&#47;&#8250;
+          &#8249;&#47;&#8250;
         </Link>
         <Link to="/work">Projects</Link>
         <Link to="/about">About</Link>
-        <Link to="../pages/Home.js">Contact</Link>
-        {/* <Link to="/blog">Blog</Link> */}
+        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
       </ul>
       <Social variants={titleAnim} className="answer">
         <a href="https://www.linkedin.com/in/daniel-mason-dev/">

@@ -112,7 +112,7 @@ const Work = () => {
 };
 
 const WorkStyles = styled(motion.div)`
-  min-height: 50vh;
+  min-height: 75vh;
   overflow: hidden;
   padding: 5rem 10rem;
   /* p {
@@ -135,8 +135,9 @@ const Projects = styled(motion.div)`
   }
   img {
     width: 100%;
-    height: 70vh;
-    object-fit: cover;
+    height: 20vh;
+    object-fit: fit;
+    overflow: hidden;
   }
 `;
 

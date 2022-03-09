@@ -14,7 +14,7 @@ const AboutSection = () => {
         <motion.div variants={titleAnim} initial="hidden" animate="show">
           <div>
             <Hide>
-              <h1>Hi. I'm Daniel.</h1>
+              <h1>Hi. I'm Daniel Mason.</h1>
               <motion.h2 variants={titleAnim}>A front end developer.</motion.h2>
               <p>
                 {" "}
@@ -51,7 +51,7 @@ const StyledImage = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  z-index: 2;
+  /* z-index: 2; */
   /* flex: 1; */
   overflow: hidden;
   button {
@@ -70,10 +70,29 @@ const StyledImage = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     img {
       margin-top: 1rem;
-      width: 45vw;
-      height: 35vh;
+      width: 20vw;
+      height: 20vh;
+      object-fit: contain;
+    }
+    button {
+      margin: 2rem;
+    }
+  }
+
+  @media (min-width: 360px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      margin-top: 1rem;
+      width: 35vw;
+      height: 30vh;
       object-fit: contain;
     }
     button {

@@ -54,6 +54,9 @@ const Image = styled.div`
   z-index: 2;
   flex: 1;
   overflow: hidden;
+  h1 {
+    color: white;
+  }
   img {
     width: 40vw;
     height: 70vh;
