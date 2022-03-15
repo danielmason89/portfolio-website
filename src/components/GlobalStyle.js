@@ -48,6 +48,7 @@ ${normalize}
 h1{
     font-family: 'Raleway', sans-serif;
     font-size: 3.5rem;
+    color: white;
     font-weight: lighter;
     @media(max-width:768px) {
         text-align: center;    

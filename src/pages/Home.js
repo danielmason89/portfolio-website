@@ -1,7 +1,7 @@
 import React from "react";
 import AboutSection from "../components/About/AboutSection";
 import SkillsSection from "../components/Skills/SkillsSection";
-import Contact from "../components/Contact/Contact";
+import Contact from "./Contact";
 // Animations
 import { motion } from "framer-motion";
 import { pageAnimation } from "../Animation";

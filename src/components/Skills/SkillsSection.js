@@ -39,7 +39,7 @@ const SkillsSection = () => {
           <SectionText>
             <p>
               I've worked with a range of technologies in the web development
-              world. Ranging from Front-end to Design.
+              world; using tools for Front-end development and Design.
             </p>
           </SectionText>
           <Cards>
@@ -100,9 +100,8 @@ const SkillsSection = () => {
 
 const Skills = styled(About)`
   min-height: 60vh;
-  h1,
-  h2 {
-    /* padding: 1rem 0rem 0.5rem 3rem; */
+  h1 {
+    color: black;
   }
   p {
     text-align: left;

@@ -9,13 +9,18 @@ const Nav = () => {
   return (
     <StyledNav id="home">
       <ul>
-        <Link to="/" className="logo">
-          &#8249;&#47;&#8250;
+        <Link to="/" className="navbar">
+          Home
         </Link>
-        <Link to="/work">Projects</Link>
-        <Link to="/about">About</Link>
-        <a href="#contact">Contact</a>
-        <a href="#skills">Skills</a>
+        <Link to="/work" className="navbar">
+          Projects
+        </Link>
+        <Link to="/about" className="navbar">
+          About
+        </Link>
+        <Link to="/contact" className="navbar">
+          Contact
+        </Link>
       </ul>
       <Social variants={titleAnim} className="answer">
         <a href="https://www.linkedin.com/in/daniel-mason-dev/">
@@ -23,6 +28,8 @@ const Nav = () => {
             src={linkedin}
             alt="Linkedin link to bring the user to"
             title="linkedin.com/in/daniel-mason-dev/"
+            target="_blank"
+            rel="noreferrer"
           />
         </a>
         <a href="https://github.com/danielmason89">
@@ -30,6 +37,8 @@ const Nav = () => {
             src={github}
             alt="Github link to bring the user to"
             title="github.com/danielmason89"
+            target="_blank"
+            rel="noreferrer"
           />
         </a>
         <a href="https://twitter.com/Dusmass">
@@ -37,6 +46,8 @@ const Nav = () => {
             src={twitter}
             alt="Twitter link to bring the user to"
             title="twitter.com/Dusmass"
+            target="_blank"
+            rel="noreferrer"
           />
         </a>
       </Social>
@@ -71,7 +82,7 @@ const StyledNav = styled.nav`
     display: flex;
     list-style: none;
   }
-  .logo {
+  .navbar-font {
     font-size: 1.5rem;
     font-family: "Lobster", cursive;
   }

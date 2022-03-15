@@ -35,6 +35,9 @@ const Work = () => {
       initial="hidden"
       animate="show"
     >
+      <header>
+        <h1>Some of my past projects...</h1>
+      </header>
       <Projects id="projects">
         <div className="card-box">
           <Hide>
@@ -148,7 +151,7 @@ const Projects = styled(motion.div)`
   img {
     width: 100%;
     height: 20vh;
-    object-fit: fit;
+    object-fit: cover;
     overflow: hidden;
   }
 `;

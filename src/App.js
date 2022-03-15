@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Work from "./pages/Work";
 import About from "./pages/About";
+import Contact from "./pages/Contact";
 // import Blog from "./pages/Blog";
 import GlobalStyle from "./components/GlobalStyle";
 import { Switch, Route, useLocation } from "react-router-dom";
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path="/About" exact strict>
             <About />
+          </Route>
+          <Route path="/Contact" exact strict>
+            <Contact />
           </Route>
         </Switch>
       </AnimatePresence>
