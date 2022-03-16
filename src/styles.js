@@ -216,3 +216,18 @@ export const SectionText = styled.p`
   padding-bottom: 3.6rem;
   color: rgba(255, 255, 255, 0.5);
 `;
+
+// Social Icons
+
+export const SocialIcons = styled.a`
+  transition: 0.3s ease;
+  color: white;
+  border-radius: 25px;
+  padding: 2rem 2rem;
+  &:hover {
+    background-color: #99a2b5;
+    transform: scale(1);
+    cursor: pointer;
+    padding: 1rem;
+  }
+`;

@@ -23,31 +23,33 @@ const Nav = () => {
         </Link>
       </ul>
       <Social variants={titleAnim} className="answer">
-        <a href="https://www.linkedin.com/in/daniel-mason-dev/">
+        <a
+          href="https://www.linkedin.com/in/daniel-mason-dev/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={linkedin}
             alt="Linkedin link to bring the user to"
             title="linkedin.com/in/daniel-mason-dev/"
-            target="_blank"
-            rel="noreferrer"
           />
         </a>
-        <a href="https://github.com/danielmason89">
+        <a
+          href="https://github.com/danielmason89"
+          target="_blank"
+          rel="noreferrer"
+        >
           <img
             src={github}
             alt="Github link to bring the user to"
             title="github.com/danielmason89"
-            target="_blank"
-            rel="noreferrer"
           />
         </a>
-        <a href="https://twitter.com/Dusmass">
+        <a href="https://twitter.com/Dusmass" target="_blank" rel="noreferrer">
           <img
             src={twitter}
             alt="Twitter link to bring the user to"
             title="twitter.com/Dusmass"
-            target="_blank"
-            rel="noreferrer"
           />
         </a>
       </Social>

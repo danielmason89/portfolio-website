@@ -1,8 +1,5 @@
 import React from "react";
 // import twitter from "../../icons/twitter1.svg";
-import profile from "../icons/profile.svg";
-import linkedin from "../icons/linkedin2.svg";
-import github from "../icons/github.svg";
 import styled from "styled-components";
 
 const Contact = () => {
@@ -16,8 +13,6 @@ const Contact = () => {
           I look forward to chatting with you, to build something creative!{" "}
           <br />
           Feel free to look at my current resume, Github, and Linkedin below.
-          <br />
-          😊 I look forward to speaking with you soon! 📬
         </p>
         <Form className="contact-form">
           <label>Name</label>
@@ -34,47 +29,6 @@ const Contact = () => {
           ></textarea>
           <input id="submit-btn" type="submit" value="Send" />
         </Form>
-        <div>
-          <a
-            href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button>
-              <img
-                src={profile}
-                alt="Resume link"
-                title="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
-              />
-            </button>
-          </a>
-          <a
-            href="https://github.com/danielmason89"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button>
-              <img
-                src={github}
-                alt="GitHub link"
-                title="https://github.com/danielmason89/"
-              />
-            </button>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/daniel-mason-dev/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <button>
-              <img
-                src={linkedin}
-                alt="Linkedin link"
-                title="linkedin.com/in/daniel-mason-dev/"
-              />
-            </button>
-          </a>
-        </div>
       </MainContact>
     </div>
   );
@@ -154,6 +108,23 @@ const Form = styled.form`
     color: #fff;
     background-color: #23d997;
     border: none;
+    font-size: 1.5rem;
+  }
+
+  input {
+    width: 35%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: none;
+    margin-top: 1rem;
+    text-indent: 1rem;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    @media (max-width: 768px) {
+      width: 100%;
+      font-size: 0.75rem;
+      border: none;
+      box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+    }
   }
 
   .input-field {
@@ -161,6 +132,7 @@ const Form = styled.form`
     padding: 10px 0px;
     background-color: #fff1f1;
     border-radius: 5px;
+    text-indent: 1rem;
     border: 1px solid #000000;
     font-size: 14px;
   }
