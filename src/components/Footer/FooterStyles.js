@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterWrapper = styled.section`
   width: calc(100vw - 96px);
   max-width: 1040px;
-  padding: 0rem 48px 40px;
+  padding: 2rem 48px 40px;
   margin: 0rem auto;
   box-sizing: content-box;
 
@@ -30,7 +30,7 @@ export const LinkItem = styled.a`
     display: flex;
   }
   @media screen and (max-width: 640px) {
-    font-size: 8px;
+    font-size: 8.5px;
     line-height: 14px;
     margin-bottom: 8px;
     display: flex;

@@ -35,7 +35,7 @@ const Contact = () => {
 };
 
 const MainContact = styled.footer`
-  height: 95vh;
+  height: 145vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -50,6 +50,9 @@ const MainContact = styled.footer`
   p {
     font-size: 2rem;
     text-align: center;
+  }
+  #contact {
+    margin-top: 1.5rem;
   }
   div {
     display: flex;
@@ -67,6 +70,18 @@ const MainContact = styled.footer`
       color: #ccc;
     }
   }
+  @media (min-width: 768px) {
+    height: 85vh;
+  }
+  @media (max-width: 668px) {
+    h1 {
+      font-size: 3rem;
+    }
+    height: 130vh;
+  }
+  @media (min-width: 800px) {
+    height: 160vh;
+  }
 `;
 
 const Form = styled.form`
@@ -80,7 +95,6 @@ const Form = styled.form`
   margin-bottom: 50px;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   font-size: 1.5rem;
-
   label {
     line-height: 2.7em;
   }
@@ -109,6 +123,12 @@ const Form = styled.form`
     background-color: #23d997;
     border: none;
     font-size: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 12px;
+    :hover {
+      color: black;
+      transition: transform 1.2s ease-in-out;
+    }
   }
 
   input {

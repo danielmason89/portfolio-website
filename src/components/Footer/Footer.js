@@ -115,6 +115,13 @@ const MainFooter = styled.footer`
     margin: 2rem 0rem;
     color: #ccc;
   }
+  @media (max-width: 668px) {
+    padding-top: 8rem;
+  }
+
+  @media (min-width: 268px) {
+    padding-top: 1rem;
+  }
 `;
 
 export default Footer;
