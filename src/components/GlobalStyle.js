@@ -34,7 +34,7 @@ ${normalize};
       color:white;
       transition: all 0.5s ease;
       font-family: 'Raleway', sans-serif;
-      &:hover{
+      :hover{
           background-color: #23d997;
           color:black;
       }

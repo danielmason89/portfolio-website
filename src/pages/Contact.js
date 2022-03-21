@@ -71,7 +71,7 @@ const MainContact = styled.footer`
     }
   }
   @media (min-width: 768px) {
-    height: 85vh;
+    height: 100vh;
   }
   @media (max-width: 668px) {
     h1 {

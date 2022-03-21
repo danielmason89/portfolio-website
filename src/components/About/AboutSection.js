@@ -37,7 +37,7 @@ const AboutSection = () => {
           alt="creative developer brain"
         />
         <motion.button variants={fade}>
-          <a href="MAILTO: danielmasson0@gmail.com">Let's Connect</a>
+          <a href="../../pages/Contact.js">Let's Connect</a>
         </motion.button>
       </StyledImage>
       <Wave />
