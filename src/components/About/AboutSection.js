@@ -1,15 +1,18 @@
 import homeImage from "../../icons/PngItem_468994.png";
 import styled from "styled-components";
+import GlobalStyle from ".././GlobalStyle";
 import { About, Description, Hide } from "../../styles";
 // Framer Motion
 import { motion } from "framer-motion";
 import "animate.css";
 import { titleAnim, fade, photoAnim } from "../../Animation";
 import Wave from "../Wave";
+import { Link } from "react-router-dom";
 
 const AboutSection = () => {
   return (
     <About>
+      <GlobalStyle />
       <Description>
         <motion.div variants={titleAnim} initial="hidden" animate="show">
           <div>
@@ -18,10 +21,11 @@ const AboutSection = () => {
               <motion.h2 variants={titleAnim}>A front end developer.</motion.h2>
               <p>
                 {" "}
-                who strives to build responsive{" "}
+                who strives to{" "}
                 <motion.span variants={fade}>
-                  websites in Ottawa, ON.
+                  build responsive websites
                 </motion.span>{" "}
+                in Ottawa, Ontario.
                 <br />
                 Please take a look around!
               </p>
@@ -30,15 +34,17 @@ const AboutSection = () => {
         </motion.div>
       </Description>
       <StyledImage>
-        <motion.img
-          className="animate__heartBeat"
-          variants={photoAnim}
-          src={homeImage}
-          alt="creative developer brain"
-        />
-        <motion.button variants={fade}>
-          <a href="../../pages/Contact.js">Let's Connect</a>
-        </motion.button>
+        <div>
+          <motion.img
+            className="animate__heartBeat"
+            variants={photoAnim}
+            src={homeImage}
+            alt="creative developer brain"
+          />
+          <Link to="/contact">
+            <motion.button variants={fade}>Let's Connect</motion.button>
+          </Link>
+        </div>
       </StyledImage>
       <Wave />
     </About>
@@ -46,16 +52,16 @@ const AboutSection = () => {
 };
 
 const StyledImage = styled.div`
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* z-index: 2; */
-  /* flex: 1; */
   overflow: hidden;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   button {
     margin-top: 5rem;
+    font-size: 1.5rem;
   }
   img {
     margin-top: 1rem;
@@ -72,17 +78,18 @@ const StyledImage = styled.div`
     justify-content: center;
 
     img {
-      margin-top: 1rem;
-      width: 20vw;
-      height: 20vh;
+      margin-top: 5rem;
+      width: 35vw;
+      height: 40vh;
       object-fit: contain;
     }
     button {
-      margin: 2rem;
+      font-size: 1.25rem;
+      margin: 6rem;
     }
   }
 
-  @media (min-width: 360px) {
+  @media (max-width: 250px) {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -91,12 +98,9 @@ const StyledImage = styled.div`
 
     img {
       margin-top: 1rem;
-      width: 35vw;
+      width: 5vw;
       height: 30vh;
       object-fit: contain;
-    }
-    button {
-      margin: 2rem;
     }
   }
 `;

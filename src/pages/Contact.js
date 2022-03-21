@@ -12,7 +12,7 @@ const Contact = () => {
         <p>
           I look forward to chatting with you, to build something creative!{" "}
           <br />
-          Feel free to look at my current resume, Github, and Linkedin below.
+          Feel free to look at my current resume, GitHub, and Linkedin below.
         </p>
         <Form className="contact-form">
           <label>Name</label>
@@ -77,10 +77,10 @@ const MainContact = styled.footer`
     h1 {
       font-size: 3rem;
     }
-    height: 130vh;
+    height: 125vh;
   }
   @media (min-width: 800px) {
-    height: 160vh;
+    height: 140vh;
   }
 `;
 

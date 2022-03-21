@@ -17,6 +17,12 @@ export const Description = styled.div`
     }
   }
 
+  @media (min-width: 669px) {
+    h1 {
+      text-align: left;
+    }
+  }
+
   @media (max-width: 1300px) {
     padding: 0;
     button {

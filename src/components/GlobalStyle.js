@@ -30,18 +30,24 @@ ${normalize};
       padding: .5rem 1.5rem;
       margin: 1.4rem 0rem;
       border: 2px solid #23d997;
+      border-radius: 15px;
       background: transparent;
       color:white;
       transition: all 0.5s ease;
       font-family: 'Raleway', sans-serif;
-      :hover{
+      z-index: 20;
+      cursor: pointer;
+      &:hover{
+          transform: translate(-4px, 2px);
           background-color: #23d997;
           color:black;
+          cursor: pointer;
       }
       @media(max-width:768px) {
         &:hover{
           background-color: #23d997;
           color:black;
+          cursor: pointer;
       }
                 }
   }
