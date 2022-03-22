@@ -35,7 +35,7 @@ ${normalize};
       color:white;
       transition: all 0.5s ease;
       font-family: 'Raleway', sans-serif;
-      z-index: 20;
+     
       cursor: pointer;
       &:hover{
           transform: translate(-4px, 2px);

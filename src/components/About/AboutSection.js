@@ -52,7 +52,8 @@ const AboutSection = () => {
 };
 
 const StyledImage = styled.div`
-  overflow: hidden;
+  /* overflow: hidden; */
+  z-index: 2000000000;
   div {
     display: flex;
     flex-direction: column;
@@ -78,7 +79,7 @@ const StyledImage = styled.div`
     justify-content: center;
 
     img {
-      margin-top: 5rem;
+      margin-top: 2rem;
       width: 35vw;
       height: 40vh;
       object-fit: contain;

@@ -28,7 +28,6 @@ const WaveSvg = styled.svg`
   z-index: 1;
   @media (max-width: 1300px) {
     display: none;
-    z-index: -10;
   }
 `;
 
