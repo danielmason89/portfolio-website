@@ -62,6 +62,7 @@ const Work = () => {
                       animate={controls3}
                       initial="hidden"
                       src={image}
+                      alt={(title, description)}
                     />
 
                     <TitleContent>

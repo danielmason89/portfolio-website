@@ -10,9 +10,11 @@ const Contact = () => {
           <h1 id="contact">Contact -📬- Social</h1>
         </header>
         <p>
-          I look forward to chatting with you, to build something creative!{" "}
-          <br />
-          Feel free to look at my current resume, GitHub, and Linkedin below.
+          If you’re looking for a fun and collaborative front end developer,
+          let’s chat over coffee or Zoom!
+          <br />I look forward to chatting with you, to build something
+          creative! <br />
+          Feel free to check out at my current resume, GitHub, and Linkedin.
         </p>
         <Form className="contact-form">
           <label>Name</label>
@@ -48,7 +50,7 @@ const MainContact = styled.footer`
     align-items: flex-start;
   }
   p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
   }
   #contact {
@@ -70,8 +72,11 @@ const MainContact = styled.footer`
       color: #ccc;
     }
   }
-  @media (min-width: 768px) {
-    height: 100vh;
+  @media (max-width: 768px) {
+    height: 110vh;
+    p {
+      font-size: 1.8rem;
+    }
   }
   @media (max-width: 668px) {
     h1 {
@@ -79,8 +84,11 @@ const MainContact = styled.footer`
     }
     height: 125vh;
   }
-  @media (min-width: 800px) {
-    height: 140vh;
+  @media (min-width: 769px) {
+    height: 115vh;
+    p {
+      font-size: 1.7rem;
+    }
   }
 `;
 

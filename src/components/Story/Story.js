@@ -17,30 +17,28 @@ const Story = () => {
       </Image>
       <StyledStory>
         <p>
-          As a self-taught developer, I've transitioned from a 10-year career in
-          the culinary arts to the tech industry. I have chosen to make this
-          transition because of experiences during the early 2000s I've had
-          through my parents.
+          As a self-taught front end developer, I've transitioned from a 10-year
+          career in the culinary arts to the tech industry. I chose to make this
+          transition because of experiences I had through my parents during the
+          early 2000s.
         </p>
         <p>
-          During their time as fiber-optics technicians, I learned a lot about
-          computers and their interworkings from a hardware and software point
-          of view.
-          <br /> Those experiences fostered my love for the industry since I'm a
-          creative problem solver who enjoys the ability to be inventive and
-          critical when needed.
+          During that time, I learned a lot about computers. Those experiences
+          fostered my love for the industry since I'm a creative problem solver
+          who enjoys being able to be inventive and critical when needed.
+          <br />
         </p>
         <p>
-          I'm currently looking for full-time work as a front-end developer in a
-          medium to a large-scale company where I will have the opportunity to
-          collaborate with like-minded individuals, add value with the skills I
-          currently have, and continue to grow as a developer. Moreover, I'm
-          open to working on freelance projects that come my way depending on
-          their respective scale and subject matter.
+          I'm currently looking for full-time work as a front-end developer
+          where I will have the opportunity to collaborate with like-minded
+          individuals, add value with the skills I currently have, and continue
+          to grow as a developer. Moreover, I'm open to working on freelance
+          projects that come my way depending on their respective scale and
+          subject matter.
         </p>
         <span>
-          In my free time, you'll find me enjoying a good cup of coffee,
-          reading, and going on bike rides during the summer.
+          In my personal time, I enjoy a good cup of coffee, reading, and going
+          on bike rides during the summer.
         </span>
       </StyledStory>
     </div>
@@ -56,6 +54,7 @@ const Image = styled.div`
   overflow: hidden;
   h1 {
     color: white;
+    text-decoration: underline white 0.02em;
   }
   img {
     width: 40vw;
@@ -78,10 +77,12 @@ const StyledStory = styled.div`
   p {
     line-height: 2rem;
     color: white;
+    text-align: left;
   }
   span {
     padding-top: 2rem;
     font-weight: normal;
+    font-size: 1.5rem;
     color: white;
   }
 `;

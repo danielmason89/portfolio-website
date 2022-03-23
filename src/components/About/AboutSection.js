@@ -23,7 +23,7 @@ const AboutSection = () => {
                 {" "}
                 who strives to{" "}
                 <motion.span variants={fade}>
-                  build responsive websites
+                  build mobile-friendly and responsive websites
                 </motion.span>{" "}
                 in Ottawa, Ontario.
                 <br />
