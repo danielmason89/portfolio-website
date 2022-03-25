@@ -122,6 +122,10 @@ const MainFooter = styled.footer`
   @media (min-width: 268px) {
     padding-top: 1rem;
   }
+
+  @media (min-width: 1041px) {
+    padding-top: 4rem;
+  }
 `;
 
 export default Footer;

@@ -10,8 +10,8 @@ const Contact = () => {
           <h1 id="contact">Contact -📬- Social</h1>
         </header>
         <p>
-          If you’re looking for a fun and collaborative front end developer,
-          let’s chat over coffee or Zoom!
+          If you are looking for a fun and collaborative front end developer,
+          lets chat over coffee or Zoom!
           <br />I look forward to chatting with you, to build something
           creative! <br />
           Feel free to check out at my current resume, GitHub, and Linkedin.
@@ -73,7 +73,7 @@ const MainContact = styled.footer`
     }
   }
   @media (max-width: 768px) {
-    height: 110vh;
+    height: 135vh;
     p {
       font-size: 1.8rem;
     }
@@ -82,10 +82,10 @@ const MainContact = styled.footer`
     h1 {
       font-size: 3rem;
     }
-    height: 125vh;
+    height: 155vh;
   }
   @media (min-width: 769px) {
-    height: 115vh;
+    height: 125vh;
     p {
       font-size: 1.7rem;
     }

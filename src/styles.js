@@ -225,15 +225,37 @@ export const SectionText = styled.p`
 
 // Social Icons
 
-export const SocialIcons = styled.a`
+export const SocialIcons = styled.button`
   transition: 0.3s ease;
   color: white;
   border-radius: 25px;
-  padding: 2rem 2rem;
+  padding: 1rem 1rem;
+  border: 1px solid #727c92;
+  margin: 0rem 1rem;
+  box-shadow: 1px 1px 8px rgba(119, 115, 115, 0.5);
   &:hover {
     background-color: #99a2b5;
     transform: scale(1);
     cursor: pointer;
-    padding: 1rem;
+    border: 1px solid #727c92;
+  }
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 25px;
+
+    transition: top, right, left, bottom, 100ms ease-in-out;
+  }
+  :hover::before,
+  :focus::before {
+    top: calc(2px * -2);
+    left: calc(2px * -2);
+    right: calc(2px * -2);
+    bottom: calc(2px * -2);
   }
 `;
