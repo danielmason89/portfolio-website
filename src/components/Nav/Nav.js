@@ -4,6 +4,7 @@ import linkedin from "../../icons/linkedin2.svg";
 import github from "../../icons/github.svg";
 import { Link } from "react-router-dom";
 import { titleAnim } from "../../Animation";
+import { SocialIcons } from "../../styles";
 
 const Nav = () => {
   return (
@@ -23,35 +24,45 @@ const Nav = () => {
         </Link>
       </ul>
       <Social variants={titleAnim} className="answer">
-        <a
-          href="https://www.linkedin.com/in/daniel-mason-dev/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={linkedin}
-            alt="Linkedin link to bring the user to"
-            title="linkedin.com/in/daniel-mason-dev/"
-          />
-        </a>
-        <a
-          href="https://github.com/danielmason89"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img
-            src={github}
-            alt="Github link to bring the user to"
-            title="github.com/danielmason89"
-          />
-        </a>
-        <a href="https://twitter.com/Dusmass" target="_blank" rel="noreferrer">
-          <img
-            src={twitter}
-            alt="Twitter link to bring the user to"
-            title="twitter.com/Dusmass"
-          />
-        </a>
+        <SocialIcons>
+          <a
+            href="https://www.linkedin.com/in/daniel-mason-dev/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={linkedin}
+              alt="Linkedin link to bring the user to"
+              title="linkedin.com/in/daniel-mason-dev/"
+            />
+          </a>
+        </SocialIcons>
+        <SocialIcons>
+          <a
+            href="https://github.com/danielmason89"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={github}
+              alt="Github link to bring the user to"
+              title="github.com/danielmason89"
+            />
+          </a>
+        </SocialIcons>
+        <SocialIcons>
+          <a
+            href="https://twitter.com/Dusmass"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={twitter}
+              alt="Twitter link to bring the user to"
+              title="twitter.com/Dusmass"
+            />
+          </a>
+        </SocialIcons>
       </Social>
     </StyledNav>
   );
@@ -63,7 +74,7 @@ const StyledNav = styled.nav`
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 5rem;
+  padding: 0rem 2rem;
   position: sticky;
   z-index: 100000;
   a {
@@ -104,7 +115,8 @@ const StyledNav = styled.nav`
 
 const Social = styled.div`
   a {
-    padding: 2rem 1rem;
+    padding: 1rem 0.25rem;
+    margin: 0rem 0.5rem;
   }
   img {
     :hover {

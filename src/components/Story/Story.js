@@ -54,7 +54,7 @@ const Image = styled.div`
   overflow: hidden;
   h1 {
     color: white;
-    text-decoration: underline white 0.02em;
+    /* text-decoration: underline white 0.02em; */
   }
   img {
     width: 40vw;

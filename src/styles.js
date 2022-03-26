@@ -229,7 +229,7 @@ export const SocialIcons = styled.button`
   transition: 0.3s ease;
   color: white;
   border-radius: 25px;
-  padding: 1rem 1rem;
+  padding: 1rem 1.35rem;
   border: 1px solid #727c92;
   margin: 0rem 1rem;
   box-shadow: 1px 1px 8px rgba(119, 115, 115, 0.5);
