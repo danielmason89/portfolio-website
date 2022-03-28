@@ -128,7 +128,7 @@ export const LinkColumn = styled.div`
 export const LinkTitle = styled.h4`
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 1rem;
   line-height: 24px;
   text-transform: uppercase;
   margin-bottom: 16px;

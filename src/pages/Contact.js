@@ -1,5 +1,5 @@
 import React from "react";
-// import twitter from "../../icons/twitter1.svg";
+import ContactForm from "../components/Form";
 import styled from "styled-components";
 
 const Contact = () => {
@@ -14,22 +14,11 @@ const Contact = () => {
           lets chat over coffee or Zoom!
           <br />I look forward to chatting with you, to build something
           creative! <br />
-          Feel free to check out at my current resume, GitHub, and Linkedin.
+          Feel free to check out at my current resume, GitHub, and Linkedin
+          below.
         </p>
         <Form className="contact-form">
-          <label>Name</label>
-          <input className="input-field" type="text" name="Name" required />
-          <label>Subject</label>
-          <input className="input-field" type="text" name="Subject" required />
-          <label>Email</label>
-          <input className="input-field" type="email" name="Email" required />
-          <label>Message</label>
-          <textarea
-            className="input-field"
-            type="text"
-            name="message"
-          ></textarea>
-          <input id="submit-btn" type="submit" value="Send" />
+          <ContactForm />
         </Form>
       </MainContact>
     </div>
@@ -92,7 +81,7 @@ const MainContact = styled.footer`
   }
 `;
 
-const Form = styled.form`
+const Form = styled.div`
   display: block;
   max-width: 600px;
   margin: 3rem auto;
@@ -133,9 +122,13 @@ const Form = styled.form`
     font-size: 1.5rem;
     border-radius: 10px;
     box-shadow: 12px;
-    :hover {
+    cursor: pointer;
+    &:hover {
+      transform: translate(0px, 3px);
+      background-color: #23d997;
       color: black;
-      transition: transform 1.2s ease-in-out;
+      cursor: pointer;
+      box-shadow: 12px;
     }
   }
 

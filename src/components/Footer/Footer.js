@@ -47,46 +47,51 @@ export const Footer = () => {
               <Slogan>😊 I look forward to speaking with you soon! 📬</Slogan>
             </CompanyContainer>
             <SocialContainer>
-              <SocialIcons
-                href="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={profile}
-                  alt="Resume link"
-                  title="https://drive.google.com/file/d/1C4OZ9kLQRoGguslGvdsRl4oc63ULdp7F/view?usp=sharing"
-                />
+              <SocialIcons>
+                <a
+                  href="https://drive.google.com/file/d/13g6p2_V58uUW2cUfFxovdh4i0DJvfwOg/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={profile}
+                    alt="Resume link"
+                    title="https://drive.google.com/file/d/13g6p2_V58uUW2cUfFxovdh4i0DJvfwOg/view?usp=sharing"
+                  />
+                </a>
               </SocialIcons>
-              <SocialIcons
-                href="https://github.com/danielmason89"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={github}
-                  alt="GitHub link"
-                  title="github.com/danielmason89"
-                />
+              <SocialIcons>
+                <a
+                  href="https://github.com/danielmason89"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={github}
+                    alt="GitHub link"
+                    title="github.com/danielmason89"
+                    href="https://github.com/danielmason89"
+                  />
+                </a>
               </SocialIcons>
-              <SocialIcons
-                href="https://www.linkedin.com/in/daniel-mason-dev/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={linkedin}
-                  alt="Linkedin link"
-                  title="linkedin.com/in/daniel-mason-dev/"
-                />
+              <SocialIcons>
+                <a
+                  href="https://www.linkedin.com/in/daniel-mason-dev/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    src={linkedin}
+                    alt="Linkedin link"
+                    title="linkedin.com/in/daniel-mason-dev/"
+                    href="https://www.linkedin.com/in/daniel-mason-dev/"
+                  />
+                </a>
               </SocialIcons>
             </SocialContainer>
           </SocialIconsContainer>
           <h3>
-            ©2021 |{" "}
-            <a href="#home">
-              <span>Daniel Mason</span>
-            </a>
+            ©2021 <span>Daniel Mason</span> | <a href="#home">Back to Top</a>
           </h3>
         </FooterWrapper>
       </MainFooter>
@@ -115,6 +120,13 @@ const MainFooter = styled.footer`
     margin: 2rem 0rem;
     color: #ccc;
   }
+  a {
+    font-size: 1.25rem;
+    cursor: pointer;
+    :hover {
+      color: #8f7e8f;
+    }
+  }
   @media (max-width: 668px) {
     padding-top: 8rem;
   }
@@ -124,7 +136,7 @@ const MainFooter = styled.footer`
   }
 
   @media (min-width: 1041px) {
-    padding-top: 4rem;
+    padding-top: 15rem;
   }
 `;
 
