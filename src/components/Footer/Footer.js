@@ -91,7 +91,7 @@ export const Footer = () => {
             </SocialContainer>
           </SocialIconsContainer>
           <h3>
-            ©2021 <span>Daniel Mason</span> | <a href="#home">Back to Top</a>
+            ©2022 <span>Daniel Mason</span> | <a href="#home">Back to Top</a>
           </h3>
         </FooterWrapper>
       </MainFooter>
