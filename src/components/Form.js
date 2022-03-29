@@ -17,9 +17,12 @@ function ContactForm() {
 
   return (
     <form
+      name="contact"
       onSubmit={handleSubmit}
       action="https://formspree.io/f/xqkndqpr"
       method="POST"
+      data-netlify-recaptcha="true"
+      data-netlify="true"
     >
       <label for="full-name">Name</label>
       <input

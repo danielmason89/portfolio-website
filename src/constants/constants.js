@@ -42,7 +42,7 @@ export const projects = [
   {
     title: "Walka-bout",
     description:
-      "A food app where the user can choose a meal, based on time, type of meal, and dietary restrictions.",
+      "A multi-page website where working professionals and companies can look into going on a hiking/camping vacation.",
     image: "./images/walka-bout-landpage.png",
     tags: ["HTML5", "CSS3", "Flexbox"],
     source: "https://github.com/danielmason89/walka-bout",
