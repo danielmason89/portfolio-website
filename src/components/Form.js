@@ -1,30 +1,20 @@
-import React, { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+import React from "react";
+
 import { useForm, ValidationError } from "@formspree/react";
 
 function ContactForm() {
-  const handleChange = (shakeAndBake) => {
-    console.log(shakeAndBake);
-    setCaptchaDone(true);
-  };
-
-  const [state, handleSubmit] = useForm("xqkndqpr...");
-  const [captchaDone, setCaptchaDone] = useState(false);
-
+  const [state, handleSubmit] = useForm("xqkndqpr");
   if (state.succeeded) {
     return <p>😊Thanks for reaching out!😊</p>;
   }
 
   return (
     <form
-      name="contact"
       onSubmit={handleSubmit}
       action="https://formspree.io/f/xqkndqpr"
       method="POST"
-      data-netlify-recaptcha="true"
-      data-netlify="true"
     >
-      <label for="full-name">Name</label>
+      <label htmlFor="full-name">Name</label>
       <input
         placeholder="Full Name"
         className="input-field"
@@ -41,9 +31,7 @@ function ContactForm() {
         placeholder="Title"
         required=""
       />
-      <label htmlFor="email" for="email-address">
-        Email Address
-      </label>
+      <label htmlFor="email">Email Address</label>
       <input
         className="input-field"
         id="email-address"
@@ -54,7 +42,7 @@ function ContactForm() {
       />
 
       <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label for="message">Message</label>
+      <label htmlFor="message">Message</label>
       <textarea
         id="message"
         type="text"
@@ -63,28 +51,14 @@ function ContactForm() {
         required=""
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <ReCAPTCHA
-        sitekey="6LfeTCMfAAAAAN9cIv5UoS-XwQvAhJRE8iWTuV-U"
-        onChange={handleChange}
-      />
-      {captchaDone ? (
-        <button
-          id="submit-btn"
-          type="submit"
-          value="Send"
-          disabled={state.submitting}
-        >
-          Send
-        </button>
-      ) : (
-        <button
-          id="submit-btn"
-          type="button"
-          onClick={() => alert("please do captcha")}
-        >
-          Send
-        </button>
-      )}
+      <button
+        id="submit-btn"
+        type="submit"
+        value="Send"
+        disabled={state.submitting}
+      >
+        Send
+      </button>
     </form>
   );
 }
