@@ -31,7 +31,7 @@ const MainContact = styled.footer`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 6rem;
   margin: 0 3rem;
   color: white;
   h1 {
@@ -93,9 +93,12 @@ const Form = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   font-size: 1.5rem;
   label {
-    line-height: 2.7em;
+    line-height: 2.5rem;
   }
-
+  input {
+    margin: 1rem 0rem;
+    line-height: 1.5rem;
+  }
   textarea {
     min-height: 100px;
     font-size: 0.875rem;
@@ -135,9 +138,8 @@ const Form = styled.div`
   input {
     width: 35%;
     font-size: 1rem;
-    padding: 0.5rem;
     border: none;
-    margin-top: 1rem;
+    margin-top: 0.15rem;
     text-indent: 1rem;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
     @media (max-width: 768px) {

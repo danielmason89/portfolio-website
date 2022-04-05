@@ -83,6 +83,7 @@ const StyledNav = styled.nav`
     padding: 0rem 0.5rem;
     margin: 0rem 1rem;
     transition: all 0.5s ease;
+    font-size: 1.25rem;
     &:hover {
       color: #23d997;
     }
@@ -94,6 +95,7 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    padding-top: 0.05rem;
   }
   .navbar-font {
     font-size: 1.5rem;
@@ -122,6 +124,10 @@ const Social = styled.div`
     :hover {
       transform: scale(1.4);
     }
+  }
+  button {
+    margin: 0.75rem 0.75rem;
+    padding: 0.75rem 0.75rem;
   }
   @media (max-width: 767px) {
     margin: 2rem 2rem;
