@@ -112,7 +112,7 @@ const MainFooter = styled.footer`
     font-size: 1.25rem;
     color: #23d997;
     :hover {
-      color: #8f7e8f;
+      color: #8f7b8f;
     }
   }
 
