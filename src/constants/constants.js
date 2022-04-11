@@ -43,7 +43,7 @@ export const projects = [
     title: "Walka-bout",
     description:
       "A multi-page website where working professionals and companies can look into going on a hiking/camping vacation.",
-    image: "./images/walka-bout-landpage.png",
+    image: "./images/walkabout-landingpage.png",
     tags: ["HTML5", "CSS3", "Flexbox"],
     source: "https://github.com/danielmason89/walka-bout",
     visit: "https://danielmason89.github.io/walka-bout/index.html",
