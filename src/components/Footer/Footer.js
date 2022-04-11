@@ -49,14 +49,14 @@ export const Footer = () => {
             <SocialContainer>
               <SocialIcons>
                 <a
-                  href="https://drive.google.com/file/d/13g6p2_V58uUW2cUfFxovdh4i0DJvfwOg/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1dGrwE3CKZ_XvxQMXEvmiqymv_kvua6dT/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
                   <img
                     src={profile}
                     alt="Resume link"
-                    title="https://drive.google.com/file/d/13g6p2_V58uUW2cUfFxovdh4i0DJvfwOg/view?usp=sharing"
+                    title="https://drive.google.com/file/d/1dGrwE3CKZ_XvxQMXEvmiqymv_kvua6dT/view?usp=sharing"
                   />
                 </a>
               </SocialIcons>
