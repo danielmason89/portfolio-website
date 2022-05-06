@@ -105,7 +105,7 @@ const Work = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Site
+                        Live Site
                       </ExternalLinks>
                       <ExternalLinks
                         href={source}
