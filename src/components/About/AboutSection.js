@@ -25,7 +25,7 @@ const AboutSection = () => {
                 {" "}
                 I love building{" "}
                 <motion.span variants={fade}>
-                  mobile-friendly and responsive websites
+                  dynamic and responsive websites
                 </motion.span>{" "}
                 in Ottawa, Ontario.
                 <br />
