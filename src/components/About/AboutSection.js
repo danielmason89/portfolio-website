@@ -17,19 +17,20 @@ const AboutSection = () => {
         <motion.div variants={titleAnim} initial="hidden" animate="show">
           <div>
             <Hide>
-              <h1>Hi. I'm Daniel Mason</h1>
+              <h1>Hi. I'm Daniel Mason.</h1>
               <motion.h2 variants={titleAnim}>
-                Front end developer | Life-long Learner{" "}
+                Front-end Developer | Life-long Learner{" "}
               </motion.h2>
               <p>
                 {" "}
                 I love building{" "}
-                <motion.span variants={fade}>
-                  dynamic and responsive websites
-                </motion.span>{" "}
-                in Ottawa, Ontario.
+                <motion.span variants={fade}>dynamic</motion.span> and{" "}
+                <motion.span variants={fade}>responsive</motion.span> websites.
                 <br />
-                Please take a look around!
+                Based out of{" "}
+                <motion.span variants={fade}>Ottawa, Ontario.</motion.span>{" "}
+                <br />
+                <motion.p variants={fade}>Feel free to look around😊</motion.p>
               </p>
             </Hide>
           </div>

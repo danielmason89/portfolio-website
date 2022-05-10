@@ -85,7 +85,7 @@ span{
         font-size:1.5rem;
       }
 p{
-          padding: .25rem 0rem;
+          padding: 1.75rem 0rem;
           color: white;
           font-size:1.5rem;
           

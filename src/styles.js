@@ -13,7 +13,7 @@ export const Description = styled.div`
   }
   span {
     :hover {
-      color: #8f7e8f;
+      color: #ffffff;
     }
   }
 
