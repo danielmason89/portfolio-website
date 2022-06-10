@@ -1,7 +1,17 @@
 import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
-const GlobalStyle = createGlobalStyle`
+export const lightTheme = {
+  body: "#fff",
+  fontColor: "#000",
+};
+
+export const darkTheme = {
+  body: "#2c2b2b",
+  fontColor: "#fff",
+};
+
+export const GlobalStyle = createGlobalStyle`
 ${normalize};
 
   *{
@@ -16,8 +26,10 @@ ${normalize};
       }
   }
 
+  
+
   body{
-      background: #2c2b2b;
+      background: ${(props) => props.theme.body};
       font-family: 'Lobster', sans-serif;
       overflow-x:hidden;
       font-weight: normal;
@@ -32,7 +44,7 @@ ${normalize};
       border: 2px solid #23d997;
       border-radius: 15px;
       background: transparent;
-      color:white;
+      color:${(props) => props.theme.fontColor};
       transition: all 0.5s ease;
       font-family: 'Raleway', sans-serif;
      
@@ -40,13 +52,13 @@ ${normalize};
       &:hover{
           transform: translate(-4px, 2px);
           background-color: #23d997;
-          color:black;
+          color:${(props) => props.theme.fontColor};
           cursor: pointer;
       }
       @media(max-width:768px) {
         &:hover{
           background-color: #23d997;
-          color:black;
+          color:${(props) => props.theme.fontColor};
           cursor: pointer;
       }
                 }
@@ -55,7 +67,7 @@ ${normalize};
 h1{
     font-family: 'Raleway', sans-serif;
     font-size: 3.5rem;
-    color: white;
+    color: ${(props) => props.theme.fontColor};
     font-weight: lighter;
     @media(max-width:768px) {
         text-align: center;    
@@ -67,7 +79,7 @@ h2{
           font-size: 2rem;
       }
 h3{
-          color:white;
+          color:${(props) => props.theme.fontColor};
       }
 h4{
           font-weight: bold;
@@ -86,11 +98,9 @@ span{
       }
 p{
           padding: 1.75rem 0rem;
-          color: white;
+          color: ${(props) => props.theme.fontColor};
           font-size:1.5rem;
           
       }
 
 `;
-
-export default GlobalStyle;

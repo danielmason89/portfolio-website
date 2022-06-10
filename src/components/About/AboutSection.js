@@ -1,6 +1,6 @@
 import homeImage from "../../icons/PngItem_468994.png";
 import styled from "styled-components";
-import GlobalStyle from ".././GlobalStyle";
+import { GlobalStyle } from ".././GlobalStyle";
 import { About, Description, Hide } from "../../styles";
 // Framer Motion
 import { motion } from "framer-motion";

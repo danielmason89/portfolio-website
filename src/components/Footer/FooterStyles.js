@@ -21,7 +21,7 @@ export const LinkItem = styled.a`
   position: relative;
   left: 0;
   &:hover {
-    color: #fff;
+    color: ${(props) => props.theme.fontColor};
     left: 6px;
   }
   @media screen and (max-width: 768px) {

@@ -33,7 +33,7 @@ const MainContact = styled.footer`
   flex-direction: column;
   padding-top: 6rem;
   margin: 0 3rem;
-  color: white;
+  color: ${(props) => props.theme.fontColor};
   h1 {
     display: flex;
     align-items: flex-start;

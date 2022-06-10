@@ -78,7 +78,7 @@ const StyledNav = styled.nav`
   position: sticky;
   z-index: 100000;
   a {
-    color: white;
+    color: ${(props) => props.theme.fontColor};
     text-decoration: none;
     padding: 0rem 0.5rem;
     margin: 0rem 1rem;

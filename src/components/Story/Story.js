@@ -53,7 +53,7 @@ const Image = styled.div`
   flex: 1;
   overflow: hidden;
   h1 {
-    color: white;
+    color: ${(props) => props.theme.fontColor};
     /* text-decoration: underline white 0.02em; */
   }
   img {
@@ -76,14 +76,14 @@ const StyledStory = styled.div`
   text-indent: 1rem;
   p {
     line-height: 2rem;
-    color: white;
+    color: ${(props) => props.theme.fontColor};
     text-align: left;
   }
   span {
     padding-top: 2rem;
     font-weight: normal;
     font-size: 1.5rem;
-    color: white;
+    color: ${(props) => props.theme.fontColor};
   }
 `;
 

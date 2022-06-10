@@ -109,7 +109,7 @@ const Skills = styled(About)`
     align-items: flex-start;
     width: 95%;
     padding: 1rem 0rem 2.5rem 0rem;
-    color: black;
+    color: ${(props) => props.theme.fontColor};
   }
   background-color: white;
   color: black;

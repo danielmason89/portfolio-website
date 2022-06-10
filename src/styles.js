@@ -13,7 +13,7 @@ export const Description = styled.div`
   }
   span {
     :hover {
-      color: #ffffff;
+      color: ${(props) => props.theme.fontColor};
     }
   }
 
@@ -37,7 +37,7 @@ export const About = styled(motion.header)`
   align-items: center;
   justify-content: space-between;
   padding: 5rem 10rem;
-  color: white;
+  color: ${(props) => props.theme.fontColor};
   h1 {
     line-height: 3rem;
   }
@@ -101,7 +101,7 @@ export const TitleContent = styled.div`
   z-index: 20;
   width: 100%;
   padding-top: 2rem;
-  color: #fff;
+  color: ${(props) => props.theme.fontColor};
   h1 {
     margin: 0;
   }
@@ -110,7 +110,7 @@ export const TitleContent = styled.div`
 export const HeaderThree = styled.p`
   font-weight: 200;
   letter-spacing: 2px;
-  color: #ffffff;
+  color: ${(props) => props.theme.fontColor};
   padding: 0.5rem 0;
   font-size: ${(props) => (props.title ? "2rem" : "1rem")};
 `;
@@ -133,7 +133,7 @@ export const Hr = styled.hr`
 export const CardInfo = styled.h3`
   width: 100%;
   padding: 0 50px;
-  color: #e4e6e7;
+  color: ${(props) => props.theme.fontColor};
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
@@ -178,7 +178,7 @@ export const SectionDivider = styled.div`
   width: 64px;
   height: 6px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: ${(props) => props.theme.body};
   background: ${(props) =>
     props.colorAlt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
@@ -227,7 +227,7 @@ export const SectionText = styled.p`
 
 export const SocialIcons = styled.button`
   transition: 0.3s ease;
-  color: white;
+  color: ${(props) => props.theme.fontColor};
   border-radius: 25px;
   padding: 1rem 1.35rem;
   border: 1px solid #727c92;
