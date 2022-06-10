@@ -13,7 +13,7 @@ export const Description = styled.div`
   }
   span {
     :hover {
-      color: ${(props) => props.theme.fontColor};
+      color: #d96ed4;
     }
   }
 

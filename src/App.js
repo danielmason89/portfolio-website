@@ -13,7 +13,7 @@ import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("light");
   const themeToggler = () => {
     theme === "light" ? setTheme("dark") : setTheme("light");
   };
