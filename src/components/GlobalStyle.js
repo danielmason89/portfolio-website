@@ -31,6 +31,7 @@ ${normalize};
 
   body{
       background: ${(props) => props.theme.body};
+      color: ${(props) => props.theme.fontColor};
       font-family: 'Lobster', sans-serif;
       overflow-x:hidden;
       font-weight: normal;

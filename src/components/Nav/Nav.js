@@ -5,9 +5,9 @@ import github from "../../icons/github.svg";
 import { Link } from "react-router-dom";
 import { titleAnim } from "../../Animation";
 import { SocialIcons } from "../../styles";
-import Switch from "../Switch/Switch";
+import ModeSwitch from "../Switch/Switch";
 
-const Nav = () => {
+const Nav = ({ themeToggler }) => {
   return (
     <StyledNav id="home">
       <ul>
@@ -24,7 +24,7 @@ const Nav = () => {
           Contact
         </Link>
       </ul>
-      <Switch />
+      <ModeSwitch themeToggler={themeToggler} />
       <Social variants={titleAnim} className="answer">
         <SocialIcons>
           <a

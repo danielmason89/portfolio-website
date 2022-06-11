@@ -1,15 +1,12 @@
-import React from "react";
-import { StyledSwitch, Slider } from "./SwitchStyles";
-
-const Switch = () => {
-  return (
-    <StyledSwitch>
-      <label>
-        <input type="checkbox" />
-        <Slider className="slider" />
-      </label>
-    </StyledSwitch>
-  );
+import { func, string } from "prop-types";
+// import { CgSun } from "react-icons/cg";
+// import { HiMoon } from "react-icons/hi";
+const ModeSwitch = ({ themeToggler }) => {
+  return <button onClick={themeToggler}>Dark Mode</button>;
 };
 
-export default Switch;
+ModeSwitch.propTypes = {
+  theme: string,
+  toggleTheme: func,
+};
+export default ModeSwitch;
