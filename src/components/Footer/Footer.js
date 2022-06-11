@@ -104,7 +104,7 @@ const MainFooter = styled.footer`
   flex-direction: column;
   text-align: center;
   padding-top: 16rem;
-  color: white;
+  color: ${(props) => props.theme.fontColor};
   align-items: center;
   justify-content: center;
   span {
@@ -112,19 +112,19 @@ const MainFooter = styled.footer`
     font-size: 1.25rem;
     color: #23d997;
     :hover {
-      color: #8f7b8f;
+      color: #d96ed4;
     }
   }
 
   h3 {
     margin: 2rem 0rem;
-    color: #ccc;
+    color: ${(props) => props.theme.fontColor};
   }
   a {
     font-size: 1.25rem;
     cursor: pointer;
     :hover {
-      color: #8f7e8f;
+      color: #d963d4;
     }
   }
   @media (max-width: 668px) {

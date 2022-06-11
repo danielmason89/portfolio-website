@@ -88,9 +88,9 @@ const Form = styled.div`
   border: 1px solid #ffffff;
   padding: 16px;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: ${(props) => props.theme.body};
   margin-bottom: 50px;
-  box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
+  box-shadow: 3px 3px 40px rgba(80, 78, 78, 0.5);
   font-size: 1.5rem;
   label {
     line-height: 2.5rem;
@@ -119,7 +119,7 @@ const Form = styled.div`
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: #fff;
+    color: ${(props) => props.theme.fontColor};
     background-color: #23d997;
     border: none;
     font-size: 1.5rem;
@@ -129,7 +129,7 @@ const Form = styled.div`
     &:hover {
       transform: translate(0px, 3px);
       background-color: #23d997;
-      color: black;
+      color: whitesmoke;
       cursor: pointer;
       box-shadow: 12px;
     }
@@ -153,11 +153,12 @@ const Form = styled.div`
   .input-field {
     width: 100%;
     padding: 10px 0px;
-    background-color: #fff1f1;
+    background-color: ${(props) => props.theme.fontColor};
     border-radius: 5px;
     text-indent: 1rem;
     border: 1px solid #000000;
     font-size: 14px;
+    color: ${(props) => props.theme.body};
   }
 `;
 

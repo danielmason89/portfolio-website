@@ -5,6 +5,7 @@ import github from "../../icons/github.svg";
 import { Link } from "react-router-dom";
 import { titleAnim } from "../../Animation";
 import { SocialIcons } from "../../styles";
+import Switch from "../Switch/Switch";
 
 const Nav = () => {
   return (
@@ -23,6 +24,7 @@ const Nav = () => {
           Contact
         </Link>
       </ul>
+      <Switch />
       <Social variants={titleAnim} className="answer">
         <SocialIcons>
           <a

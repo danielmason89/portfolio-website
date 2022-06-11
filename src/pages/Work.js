@@ -29,7 +29,6 @@ const Work = () => {
   const [element5, controls5] = useScroll();
   return (
     <WorkStyles
-      style={{ background: "#2c2b2b" }}
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
@@ -131,6 +130,7 @@ const WorkStyles = styled(motion.div)`
   min-height: 75vh;
   overflow: hidden;
   padding: 5rem 10rem;
+  background: ${(props) => props.theme.body};
   /* p {
     font-size: 2rem;
   } */

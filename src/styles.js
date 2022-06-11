@@ -120,6 +120,8 @@ export const Image = styled.img`
   height: 100%;
   object-fit: cover;
   overflow: hidden;
+  box-shadow: 10px;
+  border-radius: 10px;
 `;
 
 export const Hr = styled.hr`
@@ -150,15 +152,16 @@ export const UtilityList = styled.ul`
 `;
 
 export const ExternalLinks = styled.a`
-  color: #d4c0c0;
+  color: ${(props) => props.theme.fontColor};
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background: #6b3030;
+  background: #a72c2c;
   border-radius: 15px;
   transition: 0.5s;
   &:hover {
-    border: 1px solid #ffffff;
-    background: #801414;
+    border: #ffffff;
+    background: #ab4b4b;
+    color: #ffffffe2;
   }
 `;
 
@@ -169,7 +172,7 @@ export const TagList = styled.ul`
   list-style: none;
 `;
 export const Tag = styled.li`
-  color: #d8bfbf;
+  color: ${(props) => props.theme.fontColor};
   font-size: 1rem;
   padding: 0.5rem 0.5rem;
 `;
@@ -178,7 +181,7 @@ export const SectionDivider = styled.div`
   width: 64px;
   height: 6px;
   border-radius: 10px;
-  background-color: ${(props) => props.theme.body};
+  background-color: ${(props) => props.theme.fontColor};
   background: ${(props) =>
     props.colorAlt
       ? "linear-gradient(270deg, #F46737 0%, #945DD6 100%)"
@@ -220,7 +223,7 @@ export const SectionText = styled.p`
   line-height: 40px;
   font-weight: 300;
   padding-bottom: 3.6rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: ${(props) => props.theme.fontColor};
 `;
 
 // Social Icons

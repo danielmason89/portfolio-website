@@ -101,7 +101,7 @@ const SkillsSection = () => {
 const Skills = styled(About)`
   min-height: 60vh;
   h1 {
-    color: black;
+    color: ${(props) => props.theme.fontColor};
   }
   p {
     text-align: left;
@@ -111,8 +111,8 @@ const Skills = styled(About)`
     padding: 1rem 0rem 2.5rem 0rem;
     color: ${(props) => props.theme.fontColor};
   }
-  background-color: white;
-  color: black;
+  background-color: ${(props) => props.theme.body};
+  color: ${(props) => props.theme.body};
   padding: 1rem 0rem;
   @media (max-width: 768px) {
     p {

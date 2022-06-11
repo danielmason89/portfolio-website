@@ -2,12 +2,13 @@ import { createGlobalStyle } from "styled-components";
 import { normalize } from "styled-normalize";
 
 export const lightTheme = {
-  body: "#fff",
-  fontColor: "#ffffff7d",
+  body: "#ffffff",
+  fontColor: "#2c2b2b",
+  opacity: ".24",
 };
 
 export const darkTheme = {
-  body: "#2c2b2b",
+  body: "#312e2e",
   fontColor: "#ffffffdb",
 };
 
@@ -52,7 +53,7 @@ ${normalize};
       &:hover{
           transform: translate(-4px, 2px);
           background-color: #23d997;
-          color:${(props) => props.theme.fontColor};
+          color:${(props) => props.theme.body};
           cursor: pointer;
       }
       @media(max-width:768px) {
