@@ -16,7 +16,6 @@ function App() {
   const location = useLocation();
   const [theme, themeToggler] = useDarkMode();
 
-  // zoom chas 40mins, limit, let me send new zoom link
   //
 
   const themeMode = theme === "light" ? lightTheme : darkTheme;

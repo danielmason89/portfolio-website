@@ -3,12 +3,12 @@ import { normalize } from "styled-normalize";
 
 export const lightTheme = {
   body: "#ffffff",
-  fontColor: "#2c2b2b",
+  fontColor: "#000000",
   opacity: ".24",
 };
 
 export const darkTheme = {
-  body: "#312e2e",
+  body: "#272727",
   fontColor: "#ffffffdb",
 };
 
