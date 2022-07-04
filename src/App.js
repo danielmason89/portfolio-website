@@ -8,12 +8,11 @@ import Contact from "./pages/Contact";
 import { ThemeProvider } from "styled-components";
 import { useDarkMode, AppContext } from "./hooks/useDarkMode";
 import { GlobalStyle, lightTheme, darkTheme } from "./components/GlobalStyle";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 // Animation
 import { AnimatePresence } from "framer-motion";
 
 function App() {
-  const location = useLocation();
   const [theme, themeToggler] = useDarkMode();
 
   //
@@ -28,20 +27,12 @@ function App() {
           <GlobalStyle />
           <Nav themeToggler={themeToggler} />
           <AnimatePresence exitBeforeEnter>
-            <Switch location={location} key={location.pathname}>
-              <Route path="/" exact strict>
-                <Home />
-              </Route>
-              <Route path="/Work">
-                <Work />
-              </Route>
-              <Route path="/About" exact strict>
-                <About />
-              </Route>
-              <Route path="/Contact" exact strict>
-                <Contact />
-              </Route>
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Work" element={<Work />} />
+              <Route path="/About" element={<About />} />
+              <Route path="/Contact" element={<Contact />} />
+            </Routes>
           </AnimatePresence>
           <Footer />
         </div>
