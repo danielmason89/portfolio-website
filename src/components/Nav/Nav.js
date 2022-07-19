@@ -41,14 +41,14 @@ const Nav = ({ themeToggler }) => {
         </SocialIcons>
         <SocialIcons>
           <a
-            href="https://drive.google.com/file/d/1x-2gp8kn1U2x0PAr118xsGxb0zVBgryV/view?usp=sharing"
+            href="https://drive.google.com/file/d/17qdrhNDJu47145Xy_BdqlZ85hl3HQ7z0/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
             <img
               src={profile}
               alt="Resume link"
-              title="https://drive.google.com/file/d/1x-2gp8kn1U2x0PAr118xsGxb0zVBgryV/view?usp=sharing"
+              title="https://drive.google.com/file/d/17qdrhNDJu47145Xy_BdqlZ85hl3HQ7z0/view?usp=sharing"
             />
           </a>
         </SocialIcons>
