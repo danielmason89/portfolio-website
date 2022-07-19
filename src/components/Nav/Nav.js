@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import twitter from "../../icons/twitter1.svg";
 import linkedin from "../../icons/linkedin2.svg";
 import github from "../../icons/github.svg";
+import profile from "../../icons/profile.svg";
 import { Link } from "react-router-dom";
 import { titleAnim } from "../../Animation";
 import { SocialIcons } from "../../styles";
@@ -41,6 +41,19 @@ const Nav = ({ themeToggler }) => {
         </SocialIcons>
         <SocialIcons>
           <a
+            href="https://drive.google.com/file/d/1x-2gp8kn1U2x0PAr118xsGxb0zVBgryV/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={profile}
+              alt="Resume link"
+              title="https://drive.google.com/file/d/1x-2gp8kn1U2x0PAr118xsGxb0zVBgryV/view?usp=sharing"
+            />
+          </a>
+        </SocialIcons>
+        <SocialIcons>
+          <a
             href="https://github.com/danielmason89"
             target="_blank"
             rel="noreferrer"
@@ -49,19 +62,6 @@ const Nav = ({ themeToggler }) => {
               src={github}
               alt="Github link to bring the user to"
               title="github.com/danielmason89"
-            />
-          </a>
-        </SocialIcons>
-        <SocialIcons>
-          <a
-            href="https://twitter.com/Dusmass"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              src={twitter}
-              alt="Twitter link to bring the user to"
-              title="twitter.com/Dusmass"
             />
           </a>
         </SocialIcons>
@@ -121,11 +121,6 @@ const Social = styled.div`
   a {
     padding: 1rem 0.25rem;
     margin: 0rem 0.5rem;
-  }
-  img {
-    :hover {
-      transform: scale(1.4);
-    }
   }
   button {
     margin: 0.75rem 0.75rem;
